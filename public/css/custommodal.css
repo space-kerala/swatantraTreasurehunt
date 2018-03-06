@@ -1,0 +1,468 @@
+ /* very small devices width less than 768 */
+ @media only screen and  (max-width: 767px)
+{ 
+
+.mymodal
+{
+position:fixed;
+left:0;
+right:0;
+top:20%;
+bottom:0;
+margin:auto;
+display:table;
+}
+
+
+
+
+.modal-dialog
+{
+	/* modal width specification */
+	width:80%;
+}
+#modaldesign
+{
+
+background-color:rgba(0,0,0,.5);        
+
+}
+
+
+
+
+.close
+{
+color:white;
+opacity:1;
+}
+
+
+
+
+#inputN,#inputC
+{
+	font-size:12px;
+	color:white;
+}
+
+.mymodal > .modalcontent
+{
+	display:table-cell;
+}
+#labelm
+{
+	text-align:right;
+	color:white;
+	font-size:12px;
+}
+#labelmp
+{
+	text-align:right;
+	color:white;
+	font-size:12px;
+}
+
+
+input[type=text]{
+	padding: 12px 20px;
+   color:black;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+
+.well
+{
+	background-color:transparent;
+	/* border:none; */
+}
+#imageresource
+{
+	max-width:100%;
+	max-height:100%;
+
+}
+#mheader
+{
+ background-color:#c2b280; 
+
+ }
+
+#closebutton
+{
+	color:white;
+	background-color:black;
+	border:none;
+}
+
+#closebutton:hover
+{
+	color:white;
+	background-color:#113534;
+}
+
+
+
+}
+
+
+/* Large devices (large desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px)
+{ 
+
+.mymodal
+{
+position:fixed;
+left:0;
+right:0;
+top:20%;
+bottom:0;
+margin:auto;
+display:table;
+}
+
+.modal-dialog
+{
+	/* modal width specification */
+	width:60%;
+}
+#rulemodaldial
+{
+	width:90%;
+}
+
+#modaldesign
+{
+
+background-color:rgba(0,0,0,.2);        
+
+}
+
+
+
+
+.close
+{
+color:white;
+opacity:1;
+}
+
+
+
+
+#inputN,#inputP,#inputAlt,#inputG,#inputE
+{
+	color:white;
+}
+
+.mymodal > .modalcontent
+{
+	display:table-cell;
+}
+#labelm
+{
+	text-align:right;
+	color:white;
+	font-size:15px;
+}
+#labelmp
+{
+	text-align:right;
+	color:white;
+	font-size:17px;
+}
+
+
+input[type=text]{
+	padding: 12px 20px;
+   color:black;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+
+.well
+{
+	background-color:transparent;
+	/* border:none; */
+}
+#imageresource
+{
+	max-width:100%;
+	max-height:100%;
+
+}
+#mheader
+{
+ background-color:#c2b280; 
+
+ }
+
+#closebutton
+{
+	color:white;
+	background-color:black;
+	border:none;
+}
+
+#closebutton:hover
+{
+	color:white;
+	background-color:#113534;
+}
+
+
+
+}
+
+/* 768<=x<=991 tablets */
+  @media only screen and (min-width: 768px) and (max-width: 991px) 
+{ 
+
+.mymodal
+{
+position:fixed;
+left:0;
+right:0;
+top:20%;
+bottom:0;
+margin:auto;
+display:table;
+}
+
+.modal-dialog
+{
+	/* modal width specification */
+	width:30%;
+}
+#rulemodaldial
+{
+	width:90%;
+}
+
+#modaldesign
+{
+
+background-color:rgba(0,0,0,.5);        
+
+}
+
+
+
+
+.close
+{
+color:white;
+opacity:1;
+}
+
+
+
+
+#inputN,#inputP,#inputAlt,#inputG,#inputE
+{
+	color:white;
+}
+
+.mymodal > .modalcontent
+{
+	display:table-cell;
+}
+#labelm
+{
+	text-align:right;
+	color:white;
+	font-size:15px;
+}
+#labelmp
+{
+	text-align:right;
+	color:white;
+	font-size:17px;
+}
+
+
+input[type=text]{
+	padding: 12px 20px;
+   color:black;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+.top-buffer 
+{
+ margin-top:10px; 
+}
+.well
+{
+	background-color:transparent;
+	/* border:none; */
+}
+#imageresource
+{
+	max-width:100%;
+	max-height:100%;
+
+}
+#mheader
+{
+ background-color:#c2b280; 
+
+ }
+
+#closebutton
+{
+	color:white;
+	background-color:black;
+	border:none;
+}
+
+#closebutton:hover
+{
+	color:white;
+	background-color:#113534;
+}
+
+
+
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+@media(min-width: 992px) and (max-width: 1199px) 
+{ 
+
+.mymodal
+{
+position:fixed;
+left:0;
+right:0;
+top:20%;
+bottom:0;
+margin:auto;
+display:table;
+}
+
+.modal-dialog
+{
+	/* modal width specification */
+	width:30%;
+}
+#rulemodaldial
+{
+	width:90%;
+}
+
+#modaldesign
+{
+
+background-color:rgba(0,0,0,.5);        
+
+}
+
+
+
+
+.close
+{
+color:white;
+opacity:1;
+}
+
+
+
+
+#inputN,#inputP,#inputAlt,#inputG,#inputE
+{
+	color:white;
+}
+
+.mymodal > .modalcontent
+{
+	display:table-cell;
+}
+#labelm
+{
+	text-align:right;
+	color:white;
+	font-size:15px;
+}
+#labelmp
+{
+	text-align:right;
+	color:white;
+	font-size:17px;
+}
+
+
+input[type=text]{
+	padding: 12px 20px;
+   color:black;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+.top-buffer 
+{
+ margin-top:10px; 
+}
+.well
+{
+	background-color:transparent;
+	/* border:none; */
+}
+#imageresource
+{
+	max-width:100%;
+	max-height:100%;
+
+}
+#mheader
+{
+ background-color:#c2b280; 
+
+ }
+
+#closebutton
+{
+	color:white;
+	background-color:black;
+	border:none;
+}
+
+#closebutton:hover
+{
+	color:white;
+	background-color:#113534;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

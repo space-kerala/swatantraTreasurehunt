@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Support\Facades\Hash;
 
 class CreateAdminsTable extends Migration
 {
@@ -22,6 +23,17 @@ class CreateAdminsTable extends Migration
             $table->rememberToken();
             $table->timestamps();
         });
+
+          // default admin
+    DB::table('admins')->insert(
+        array(
+            'name' => 'Admin',
+            'email' => 'admin@treasurehunt.com',
+            'role' => 'superadmin',
+            'password' => Hash::make('password'),
+            
+        )
+    );
     }
 
     /**

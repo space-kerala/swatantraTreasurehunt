@@ -27,7 +27,34 @@ trait AuthenticatesUsers
      * @return \Illuminate\Http\RedirectResponse|\Illuminate\Http\Response|\Illuminate\Http\JsonResponse
      */
     public function login(Request $request)
-    {
+      {
+        
+        $gmail="gmail.com";
+        $googlemail="googlemail.com";
+        $usergivenemail = $request->email;
+        $usergivenemail = strtolower($usergivenemail);
+        $parts = explode("@", $usergivenemail);
+        $domainname = $parts[1];
+      if( (strcmp($domainname, $gmail) == 0 ) || (strcmp($domainname, $googlemail) == 0) )  
+       { 
+
+       
+          $username = $parts[0];
+         $usrnameplusbugfix = explode("+", $username);
+        $usrnamenoplusnoperiod = preg_replace('/[.]/', '', $usrnameplusbugfix[0]);
+        $emailfixed = $usrnamenoplusnoperiod . '@' . $gmail ;
+        $request->email = $emailfixed; 
+              
+         
+        
+       }   
+      
+
+        $users = User::where('email',$request->email)->where('status', 1)->get();
+       
+       if((count($users)))
+       {
+
         $this->validateLogin($request);
 
         // If the class is using the ThrottlesLogins trait, we can automatically throttle
@@ -50,6 +77,13 @@ trait AuthenticatesUsers
 
         return $this->sendFailedLoginResponse($request);
     }
+    else
+    {
+        session()->flash('status0', 'Invalid User or Email not Verified');
+        
+        return view('auth.login');
+    }
+}
 
     /**
      * Validate the user login request.
@@ -59,6 +93,7 @@ trait AuthenticatesUsers
      */
     protected function validateLogin(Request $request)
     {
+
         $this->validate($request, [
             $this->username() => 'required|string',
             'password' => 'required|string',
@@ -73,6 +108,10 @@ trait AuthenticatesUsers
      */
     protected function attemptLogin(Request $request)
     {
+
+         //dd($this->guard()->attempt(
+           // $this->credentials($request), $request->filled('remember')
+   //     ));
         return $this->guard()->attempt(
             $this->credentials($request), $request->filled('remember')
         );
@@ -85,8 +124,12 @@ trait AuthenticatesUsers
      * @return array
      */
     protected function credentials(Request $request)
-    {
-        return $request->only($this->username(), 'password');
+    {  
+        $array["email"] = $request->email;
+        $array["password"] = $request->password;
+      // dd($array);
+    //  dd($request->only($this->username(), 'password'));
+        return $array;
     }
 
     /**
@@ -97,14 +140,16 @@ trait AuthenticatesUsers
      */
     protected function sendLoginResponse(Request $request)
     {
+        
         $request->session()->regenerate();
 
         $this->clearLoginAttempts($request);
+        
 
         return $this->authenticated($request, $this->guard()->user())
                 ?: redirect()->intended($this->redirectPath());
+                
     }
-
     /**
      * The user has been authenticated.
      *

@@ -1,0 +1,1213 @@
+ /* very small devices width less than 768 */
+ @media only screen and  (max-width: 767px) { 
+
+html{
+  background:url("../photos/welcomemobile.jpg") no-repeat;
+  background-size:cover;
+  ba
+   
+    }
+
+body
+{
+	margin:0;
+	padding:0;
+	
+	font-family:arial;
+}
+
+h2 
+{
+margin:0;
+padding:0;
+position:absolute;
+top:60%;
+left:50%;
+font-size:20px;
+transform:translate(-50%,-50%); 
+color:white;	
+}
+
+h2 span
+{
+  color:#262626;
+  background:#fff;
+  padding:0px 3px;
+  font-family:arial;
+  text-orientation: horizontal;
+  display:table-cell;
+  box-shadow: inset 0 0 3px rgba(0,0,0,.3) , 0 3px 0 #ccc;
+  animation: treasurehuntanimate linear .9s infinite; 
+
+}
+#space
+{
+
+  padding: 0px 0 px;	
+  background:transparent;
+  animation:none;
+   box-shadow:none;
+
+}
+
+@keyframes treasurehuntanimate 
+{
+	
+	0%
+	{
+		transform:translateY(0px);
+        box-shadow: inset 0 0 3px rgba(0,0,0,.3) , 0 3px 0 #ccc, 0 15px 3px rgba(0,0,0,0);
+	}
+
+	50%
+	{
+		transform:translateY(-7px);
+         box-shadow: inset 0 0 3px rgba(0,0,0,.3) , 0 3px 0 #ccc, 0 15px 3px rgba(0,0,0,0.6);
+	}
+
+	100%
+	{
+		transform:translateY(0px);
+        box-shadow: inset 0 0 3px rgba(0,0,0,.3) , 0 3px 0 #ccc, 0 15px 3px rgba(0,0,0,0);  
+	}
+	
+}
+
+h2 span:nth-child(1)
+{
+	animation-delay:0s;
+
+}
+
+h2 span:nth-child(2)
+{
+	animation-delay:.2s;
+
+} 
+h2 span:nth-child(3)
+{
+	animation-delay:0s;
+
+} 
+h2 span:nth-child(4)
+{
+	animation-delay:.2s;
+
+} 
+h2 span:nth-child(5)
+{
+	animation-delay:0s;
+
+} 
+h2 span:nth-child(6)
+{
+	animation-delay:.2s;
+
+} 
+h2 span:nth-child(7)
+{
+	animation-delay: 0s;
+
+} 
+h2 span:nth-child(8)
+{
+	animation-delay:.2s;
+
+} 
+h2 span:nth-child(10)
+{
+	animation-delay:0s;
+
+} 
+h2 span:nth-child(11)
+{
+	animation-delay:0.2s;
+
+} 
+h2 span:nth-child(12)
+{
+	animation-delay:0s;
+
+}  
+h2 span:nth-child(13)
+{
+	animation-delay:0.2s;
+
+} 
+
+
+
+
+
+.loader
+{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+
+.loader h1
+{
+	margin:0;
+	padding:0;
+	text-transform:uppercase;
+	font-size:50px;
+	color:rgba(156,155,153,.6);
+	background-image:url("../photos/image.png");
+	background-repeat:repeat-x;
+	-webkit-background-clip: text;
+	animation: animate 15s linear infinite
+
+}
+@keyframes animate
+{
+	
+	0%
+	{
+		background-position: left 0px top 80px;
+
+	}
+	40%
+	{
+		background-position: left 800px top -50px;
+		  
+	}
+	80%
+	{
+		background-position: left 1800px top -50px;
+		  
+	}
+	100%
+	{
+		background-position: left 2400px top 80px;
+		  
+	}
+}
+
+
+
+a.loginbuttonwel
+{
+	position:absolute;
+	top:68%;
+	left:25%;
+	border-radius:5px;
+	padding:10px 15px 10px 15px;
+	background-color:rgba(0,0,0,.7);
+   
+
+}  
+#buttontext
+{
+	font-size:15px;
+}  
+
+a.registerbuttonwel
+{
+	position:absolute;
+	top:68%;
+	left:55%;
+	padding:10px 15px 10px 15px;
+	border-radius:5px;
+	background-color:rgba(0,0,0,.7);
+	
+}    
+
+a.loginbuttonwel:hover
+{
+
+	border:10px;
+	background-color:#02536E;
+	
+
+}    
+
+a.registerbuttonwel:hover
+{
+	
+	border:10px;
+	background-color:#02536E;
+	}    
+
+a{
+	font-size:20px;
+	font-family:arial;
+	text-decoration:none;
+	text-transform:uppercase;
+	
+}
+
+#recommendedbrowser
+{
+	display:none;
+
+}
+#welcomefooter
+{
+	position:absolute;
+	top:93%;
+	height:7%;
+	
+	background-color:rgba(255,255,255,0.8);
+	width:100%;
+	border-radius:10px;
+}
+#logo1
+{
+	position:relative;
+	top:5%;
+	left:5%;
+	height:90%;
+	width:auto;
+}
+#logo2
+{
+	position:relative;
+	top:5%;
+	left:10%;
+	height:90%;
+	width:auto;
+}
+#logo3
+{
+    position:relative;
+	top:1%;
+	left:15%;
+	height:90%;
+	width:auto;
+}
+
+#registrationstart
+{
+	position:absolute;
+	top:70%;
+	width:100%;
+	color:white;
+	text-align:center;
+	font-weight:bold;
+	font-size:15px;
+
+}
+
+
+  }
+
+  /* Large devices (large desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) { 
+
+html{
+  background:url("../photos/welcomedesktop.jpg") no-repeat;
+  background-size:cover;
+    }
+
+
+
+body
+{
+	margin:0;
+	padding:0;	
+	font-family:arial;
+}
+
+h2 
+{
+margin:0;
+padding:0;
+position:absolute;
+top:70%;
+left:50%;
+transform:translate(-50%,-50%); 
+color:white;	
+}
+
+h2 span
+{
+  color:#262626;
+  background:#fff;
+  padding:9px 18px;
+  font-family:arial;
+  text-orientation:horizontal;
+  display:table-cell;
+  box-shadow: inset 0 0 5px rgba(0,0,0,.3) , 0 5px 0 #ccc;
+  animation: treasurehuntanimate linear .65s infinite; 
+
+}
+#space
+{
+
+  padding: 0px 0 px;	
+  background:transparent;
+  animation:none;
+   box-shadow:none;
+
+}
+
+@keyframes treasurehuntanimate 
+{
+	
+	0%
+	{
+		transform:translateY(0px);
+        box-shadow: inset 0 0 5px rgba(0,0,0,.3) , 0 5px 0 #ccc, 0 15px 5px rgba(0,0,0,0);
+	}
+
+	50%
+	{
+		transform:translateY(-10px);
+         box-shadow: inset 0 0 5px rgba(0,0,0,.3) , 0 5px 0 #ccc, 0 15px 5px rgba(0,0,0,0.6);
+	}
+
+	100%
+	{
+		transform:translateY(0px);
+        box-shadow: inset 0 0 5px rgba(0,0,0,.3) , 0 5px 0 #ccc, 0 15px 5px rgba(0,0,0,0);  
+	}
+	
+}
+
+h2 span:nth-child(1)
+{
+	animation-delay:0s;
+
+}
+
+h2 span:nth-child(2)
+{
+	animation-delay:.2s;
+
+} 
+h2 span:nth-child(3)
+{
+	animation-delay:0s;
+
+} 
+h2 span:nth-child(4)
+{
+	animation-delay:.2s;
+
+} 
+h2 span:nth-child(5)
+{
+	animation-delay:0s;
+
+} 
+h2 span:nth-child(6)
+{
+	animation-delay:.2s;
+
+} 
+h2 span:nth-child(7)
+{
+	animation-delay: 0s;
+
+} 
+h2 span:nth-child(8)
+{
+	animation-delay:.2s;
+
+} 
+h2 span:nth-child(10)
+{
+	animation-delay:0s;
+
+} 
+h2 span:nth-child(11)
+{
+	animation-delay:0.2s;
+
+} 
+h2 span:nth-child(12)
+{
+	animation-delay:0s;
+
+}  
+h2 span:nth-child(13)
+{
+	animation-delay:0.2s;
+
+} 
+
+
+
+.loader
+{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+
+
+
+
+.loader h1
+{
+	margin:0;
+	padding:0;
+	text-transform:uppercase;
+	font-size:10em;
+	color:rgba(156,155,153,.6);
+	background-image:url("../photos/image.png");
+	background-repeat:repeat-x;
+	-webkit-background-clip: text;
+
+	animation: animate 15s linear infinite
+
+
+}
+@keyframes animate
+{
+	animation-delay: 0s;
+	0%
+	{
+		background-position: left 0px top 80px;
+
+	}
+	40%
+	{
+		background-position: left 800px top -50px;
+		  
+	}
+	80%
+	{
+		background-position: left 1800px top -50px;
+		  
+	}
+	100%
+	{
+		background-position: left 2400px top 80px;
+		  
+	}
+}
+
+a.loginbuttonwel
+{
+	position:absolute;
+	top:80%;
+	left:35%;
+	width:8%;
+	color:black;
+	padding:10px 20px 10px 20px;
+	background-color:rgba(0,0,0,.7);
+	border-radius:10px;
+	font-size:20px;
+
+}    
+
+a.registerbuttonwel
+{
+	position:absolute;
+	top:80%;
+	left:50%;
+	width:8%;
+	padding:10px 20px 10px 20px;
+	border-radius:10px;
+	background-color:rgba(0,0,0,.7);
+	font-size:20px;
+}    
+
+a.loginbuttonwel:hover
+{
+
+	border:10px;
+	background-color:#02536E;
+	
+
+}    
+
+a.registerbuttonwel:hover
+{
+	
+	border:10px;
+	background-color:#02536E;
+	}    
+
+a{
+	font-size:20px;
+	position:relative;
+	text-align:center;
+	font-family:arial;
+	text-decoration:none;
+	text-transform:uppercase;
+	
+}
+
+#recommendedbrowser
+{
+	position:absolute;
+	width:100%;
+	height:3%;
+	top:97%;
+	font-weight:bold;
+	text-align:center;
+	background-color:rgba(255,255,255,0.5);
+	color:rgb(131,3,0);
+
+}
+#welcomefooter
+{
+	position:absolute;
+	top:93%;
+	height:7%;
+	
+	background-color:rgba(255,255,255,0.8);
+	width:100%;
+	border-radius:10px;
+}
+#logo1
+{
+	position:relative;
+	top:5%;
+	left:25%;
+	height:90%;
+	width:auto;
+}
+#logo2
+{
+	position:relative;
+	top:5%;
+	left:37%;
+	height:90%;
+	width:auto;
+}
+#logo3
+{
+    position:relative;
+	top:1%;
+	left:50%;
+	height:90%;
+	width:auto;
+}
+
+#registrationstart
+{
+	position:absolute;
+	top:75%;
+	width:100%;
+	color:white;
+	text-align:center;
+	font-weight:bold;
+	font-size:30px;
+
+}
+
+}
+
+
+/* 768<=x<=991 tablets */
+  @media only screen and (min-width: 768px) and (max-width: 991px) { 
+
+
+html{
+  background:url("../photos/welcome768991.jpg") no-repeat;
+  background-size:cover; 
+    }
+
+body
+{
+	margin:0;
+	padding:0;
+	
+	font-family:arial;
+}
+
+h2 
+{
+margin:0;
+padding:0;
+position:absolute;
+top:65%;
+left:50%;
+transform:translate(-50%,-50%); 
+color:white;	
+}
+
+h2 span
+{
+  color:#262626;
+  background:#fff;
+  padding:5px 10px;
+  font-family:arial;
+  text-orientation: horizontal;
+  display:table-cell;
+  box-shadow: inset 0 0 5px rgba(0,0,0,.3) , 0 5px 0 #ccc;
+  animation: treasurehuntanimate .65s infinite; 
+
+}
+#space
+{
+
+  padding: 0px 0 px;	
+  background:transparent;
+  animation:none;
+   box-shadow:none;
+
+}
+
+@keyframes treasurehuntanimate 
+{
+	
+	0%
+	{
+		transform:translateY(0px);
+        box-shadow: inset 0 0 5px rgba(0,0,0,.3) , 0 5px 0 #ccc, 0 15px 5px rgba(0,0,0,0);
+	}
+
+	50%
+	{
+		transform:translateY(-10px);
+         box-shadow: inset 0 0 5px rgba(0,0,0,.3) , 0 5px 0 #ccc, 0 15px 5px rgba(0,0,0,0.6);
+	}
+
+	100%
+	{
+		transform:translateY(0px);
+        box-shadow: inset 0 0 5px rgba(0,0,0,.3) , 0 5px 0 #ccc, 0 15px 5px rgba(0,0,0,0);  
+	}
+	
+}
+
+h2 span:nth-child(1)
+{
+	animation-delay:0s;
+
+}
+
+h2 span:nth-child(2)
+{
+	animation-delay:.2s;
+
+} 
+h2 span:nth-child(3)
+{
+	animation-delay:0s;
+
+} 
+h2 span:nth-child(4)
+{
+	animation-delay:.2s;
+
+} 
+h2 span:nth-child(5)
+{
+	animation-delay:0s;
+
+} 
+h2 span:nth-child(6)
+{
+	animation-delay:.2s;
+
+} 
+h2 span:nth-child(7)
+{
+	animation-delay: 0s;
+
+} 
+h2 span:nth-child(8)
+{
+	animation-delay:.2s;
+
+} 
+h2 span:nth-child(10)
+{
+	animation-delay:0s;
+
+} 
+h2 span:nth-child(11)
+{
+	animation-delay:0.2s;
+
+} 
+h2 span:nth-child(12)
+{
+	animation-delay:0s;
+
+}  
+h2 span:nth-child(13)
+{
+	animation-delay:0.2s;
+
+} 
+
+
+
+
+
+.loader
+{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+
+.loader h1
+{
+	margin:0;
+	padding:0;
+	text-transform:uppercase;
+	font-size:7.5em;
+	color:rgba(156,155,153,.6);
+	background-image:url("../photos/image.png");
+	background-repeat:repeat-x;
+	-webkit-background-clip: text;
+	animation: animate 15s linear infinite
+
+}
+@keyframes animate
+{
+	animation-delay: 0s;
+	0%
+	{
+		background-position: left 0px top 80px;
+
+	}
+	40%
+	{
+		background-position: left 800px top -50px;
+		  
+	}
+	80%
+	{
+		background-position: left 1800px top -50px;
+		  
+	}
+	100%
+	{
+		background-position: left 2400px top 80px;
+		  
+	}
+}
+
+a.loginbuttonwel
+{
+	position:absolute;
+	top:75%;
+	left:35%;
+	padding:10px 20px 10px 20px;
+	border-radius:10px;
+	background-color:rgba(0,0,0,.7);
+
+
+}  
+#buttontext
+{
+	font-size:15px;
+}  
+
+a.registerbuttonwel
+{
+	position:absolute;
+	top:75%;
+	left:50%;
+	padding:10px 20px 10px 20px;
+	border-radius:10px;
+	background-color:rgba(0,0,0,.7);
+	
+}    
+a.loginbuttonwel:hover
+{
+
+	border:10px;
+	background-color:#02536E;
+	
+
+}    
+
+a.registerbuttonwel:hover
+{
+	
+	border:10px;
+	background-color:#02536E;
+	}    
+
+a{
+	font-size:20px;
+	font-family:arial;
+	text-decoration:none;
+	text-transform:uppercase;
+	
+}
+
+#recommendedbrowser
+{
+	position:absolute;
+	width:100%;
+	height:3%;
+	top:97%;
+	font-weight:bold;
+	text-align:center;
+	background-color:rgba(255,255,255,0.5);
+	color:rgb(131,3,0);
+	
+
+}
+#welcomefooter
+{
+	position:absolute;
+	top:93%;
+	height:7%;
+	
+	background-color:rgba(255,255,255,0.8);
+	width:100%;
+	border-radius:10px;
+}
+#logo1
+{
+	position:relative;
+	top:5%;
+	left:25%;
+	height:90%;
+	width:auto;
+}
+#logo2
+{
+	position:relative;
+	top:5%;
+	left:33%;
+	height:90%;
+	width:auto;
+}
+#logo3
+{
+    position:relative;
+	top:1%;
+	left:41%;
+	height:90%;
+	width:auto;
+}
+#registrationstart
+{
+	position:absolute;
+	top:75%;
+	width:100%;
+	color:white;
+	text-align:center;
+	font-weight:bold;
+	font-size:30px;
+
+}
+
+
+   }
+
+
+/* Medium devices (desktops, 992px and up) */
+@media(min-width: 992px) and (max-width: 1199px) { 
+
+
+html{
+  background:url("../photos/welcome9911200.jpg") no-repeat;
+  background-size:cover;
+    }
+
+body
+{
+	margin:0;
+	padding:0;
+	
+	font-family:arial;
+}
+
+h2 
+{
+margin:0;
+padding:0;
+position:absolute;
+top:70%;
+left:50%;
+transform:translate(-50%,-50%); 
+color:white;	
+}
+
+h2 span
+{
+  color:#262626;
+  background:#fff;
+  padding:8px 16px;
+  font-family:arial;
+  text-orientation:horizontal;
+  display:table-cell;
+  box-shadow: inset 0 0 5px rgba(0,0,0,.3) , 0 5px 0 #ccc;
+  animation: treasurehuntanimate .65s infinite; 
+
+}
+#space
+{
+
+  padding: 0px 0 px;	
+  background:transparent;
+  animation:none;
+   box-shadow:none;
+
+}
+
+@keyframes treasurehuntanimate 
+{
+	
+	0%
+	{
+		transform:translateY(0px);
+        box-shadow: inset 0 0 5px rgba(0,0,0,.3) , 0 5px 0 #ccc, 0 15px 5px rgba(0,0,0,0);
+	}
+
+	50%
+	{
+		transform:translateY(-10px);
+         box-shadow: inset 0 0 5px rgba(0,0,0,.3) , 0 5px 0 #ccc, 0 15px 5px rgba(0,0,0,0.6);
+	}
+
+	100%
+	{
+		transform:translateY(0px);
+        box-shadow: inset 0 0 5px rgba(0,0,0,.3) , 0 5px 0 #ccc, 0 15px 5px rgba(0,0,0,0);  
+	}
+	
+}
+
+h2 span:nth-child(1)
+{
+	animation-delay:0s;
+
+}
+
+h2 span:nth-child(2)
+{
+	animation-delay:.2s;
+
+} 
+h2 span:nth-child(3)
+{
+	animation-delay:0s;
+
+} 
+h2 span:nth-child(4)
+{
+	animation-delay:.2s;
+
+} 
+h2 span:nth-child(5)
+{
+	animation-delay:0s;
+
+} 
+h2 span:nth-child(6)
+{
+	animation-delay:.2s;
+
+} 
+h2 span:nth-child(7)
+{
+	animation-delay: 0s;
+
+} 
+h2 span:nth-child(8)
+{
+	animation-delay:.2s;
+
+} 
+h2 span:nth-child(10)
+{
+	animation-delay:0s;
+
+} 
+h2 span:nth-child(11)
+{
+	animation-delay:0.2s;
+
+} 
+h2 span:nth-child(12)
+{
+	animation-delay:0s;
+
+}  
+h2 span:nth-child(13)
+{
+	animation-delay:0.2s;
+
+} 
+
+
+
+.loader
+{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+
+.loader h1
+{
+	margin:0;
+	padding:0;
+	text-transform:uppercase;
+	font-size:9em;
+    color:rgba(156,155,153,.6);
+	background-image:url("../photos/image.png");
+	background-repeat:repeat-x;
+	-webkit-background-clip: text;
+	animation: animate 15s linear infinite
+
+}
+@keyframes animate
+{
+	animation-delay: 0s;
+	0%
+	{
+		background-position: left 0px top 80px;
+
+	}
+	40%
+	{
+		background-position: left 800px top -50px;
+		  
+	}
+	80%
+	{
+		background-position: left 1800px top -50px;
+		  
+	}
+	100%
+	{
+		background-position: left 2400px top 80px;
+		  
+	}
+}
+
+a.loginbuttonwel
+{
+	position:absolute;
+	top:78%;
+	left:35%;
+	padding:10px 20px 10px 20px;
+	background-color:rgba(0,0,0,.7);
+	border-radius:10px;
+	font-size:20px;
+
+}    
+
+a.registerbuttonwel
+{
+	position:absolute;
+	top:78%;
+	left:50%;
+	padding:10px 20px 10px 20px;
+	background-color:rgba(0,0,0,.7);
+	border-radius:10px;
+	font-size:20px;
+}    
+
+a.loginbuttonwel:hover
+{
+
+	border:10px;
+	background-color:#02536E;
+	
+
+}    
+
+a.registerbuttonwel:hover
+{
+	
+	border:10px;
+	background-color:#02536E;
+	}    
+
+a{
+	font-size:20px;
+	font-family:arial;
+	text-decoration:none;
+	text-transform:uppercase;
+	
+}
+#recommendedbrowser
+{
+	position:absolute;
+	width:100%;
+	height:3%;
+	top:97%;
+	font-weight:bold;
+	text-align:center;
+	background-color:rgba(255,255,255,0.5);
+	color:rgb(131,3,0);
+	
+
+}
+#welcomefooter
+{
+	position:absolute;
+	top:93%;
+	height:7%;
+	
+	background-color:rgba(255,255,255,0.8);
+	width:100%;
+	border-radius:10px;
+}
+#logo1
+{
+	position:relative;
+	top:5%;
+	left:24%;
+	height:90%;
+	width:auto;
+}
+#logo2
+{
+	position:relative;
+	top:5%;
+	left:31%;
+	height:90%;
+	width:auto;
+}
+#logo3
+{
+    position:relative;
+	top:1%;
+	left:39%;
+	height:90%;
+	width:auto;
+}
+#registrationstart
+{
+	position:absolute;
+	top:75%;
+	width:100%;
+	color:white;
+	text-align:center;
+	font-weight:bold;
+	font-size:30px;
+
+}
+
+}
+
+
+
+ 
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,1321 @@
+ /* very small devices width less than 768 */
+ @media only screen and  (max-width: 767px)
+{ 
+
+html{
+  background:url("../photos/wallpaperwel.jpg");
+  background-size:cover;
+    }
+
+ 
+ 
+
+
+
+input[type=text]{
+    width: 90%;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+input[type=text]:focus{
+	
+	outline:none;
+	border:2px groove #bc0100;
+ }
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+	font-style:strong;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+	position:absolute;
+    background-color: #45a049;
+}
+input[type=password]{
+    width: 90%;
+	height:6px;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+input[type=password]{
+    width: 90%;
+	height:6px;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+
+
+
+
+input[type=file]{
+	position:relative;
+	background:rgba(10,108,109,0);
+    width: 60%;
+	height:20%;
+	padding: 3px 5px;
+   display:block-inline;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+
+div.error_class {
+	color:white;
+	left:20%;
+	right:10%;
+	width:70%;
+	position:absolute;
+	border-radius:4px;
+	display:block;
+    background:rgba(225,0,0,0.4);
+    padding:10px 5px;
+	box-sizing:border-box;
+}
+#errormsg1
+{
+	position:absolute;
+	color:#bc0100;
+	font-size:17px;
+	font-weight:bold;
+	left:20%;
+}
+#headsignup{
+	display:none;
+}
+
+#success
+{
+	position:relative;
+	color:#0d4b51;
+	text-align:center;
+	font-size: 28px;
+	font-style:strong;
+}
+#forgotpass
+{
+	color:white;
+	position:absolute;
+	top:88%;
+	left:41.5%;
+}
+.container1 {
+	position:absolute;
+  width:90%;	
+  top:5%;
+  height:90%;
+  left:5%;
+  background:rgba(0,0,0,0.3);
+}
+#controllabel
+{
+	position:relative;
+	left:-20%;
+	font-size:10px;
+}
+#controllabel3
+{
+	position:relative;
+	font-size:10px;
+}
+input[type=text].useridlogin{
+	position:relative;
+    width: 140%;
+    height:12%;
+    left:-20%;
+	
+}	
+input[type=text].useridlogin:focus{
+	border:2px solid #bc0100;
+}
+
+input[type=email].useridlogin{
+	position:relative;
+    width: 140%;
+    height:12%;
+    left:-20%;
+	
+}	
+
+#subsignin{
+	color:white;
+    position:absolute;
+    top:81%;
+    font-size:12px;
+    left:40%;
+	width:20%;
+	height:7%;
+	
+	padding: 5px 9px;
+   display:block;
+   background:rgba(255,255,255,0);
+   border:2px groove white;
+   box-sizing: border-box;
+}
+#subsignin:hover{
+	background-color:#350000;
+	font-weight:bold;
+	cursor:pointer;
+}
+input[type=password].passwordlogin{
+    position:relative;
+	width:140%;
+	height:12%;
+	left:-20%;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+input[type=password].passwordlogin:focus{
+        outline:none;	
+		border:2px solid #bc0100;
+	}
+input[type=password].passwordconfirm{
+    position:relative;
+	width:140%;
+	height:12%;
+	left:-20%;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+input[type=password].passwordconfirm:focus{
+        outline:none;	
+		border:2px solid #bc0100;
+	}	
+div.form-signin{
+	color:white;
+	left:25%;
+	width:50%;
+	position:absolute;
+	border-radius:1%;
+	display:block;
+    background:rgba(10,108,109,0);
+}
+/* END OF CSS FOR SIGNIN.PHP */
+#errormsg{
+	
+	color:#bc0100;
+	position:relative;
+	left:20%;
+	text-align:center;
+	
+}
+	input[type=email]{
+    width:100%;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+input[type=email]:focus{
+	
+	outline:none;
+	border:2px groove #bc0100;
+ }
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+    font-size: 1em;
+	position:relative;
+	width:40%;
+    font-weight: 700;
+    color: white;
+    background:rgba(10,108,109,0);
+    display: inline-block;
+	cursor:pointer;
+}
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color:#bc0100;
+}
+.inputfile + label * {
+	pointer-events: none;
+}
+.loginbutton {
+    background-color:transparent;
+        border: none;
+    position:absolute;
+    left:64%;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+     margin: 4px 2px;
+    cursor: pointer;
+}
+.registerbutton {
+    background-color:transparent; 
+    border: none;
+    color: white;
+    position:absolute;
+    left:78%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#errorcontent
+{
+	position:absolute;
+    top:81%;
+    left:50%;
+	width:50%;
+	font-size:8px;
+	font-weight: bold;
+
+}
+
+input[type=number]{
+   
+	position:relative;
+
+	font-size:12px;
+	padding: 12px 20px;
+   display:block;
+   color:black;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+input[type=number]:focus{
+	
+	outline:none;
+	border:2px groove #bc0100;
+ }
+
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px)
+{ 
+
+#mainbody{
+  background:url("../photos/wallpaperwel.jpg") ;
+  background-size:cover;
+    }
+
+
+
+
+input[type=text]{
+    width: 100%;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+input[type=text]:focus{
+	
+	outline:none;
+	border:2px groove #bc0100;
+ }
+
+input[type=number]{
+   
+	position:relative;
+	left:20%;
+	padding: 12px 20px;
+   display:block;
+   color:black;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+input[type=number]:focus{
+	
+	outline:none;
+	border:2px groove #bc0100;
+ }
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+	font-style:strong;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+	position:absolute;
+    background-color: #45a049;
+}
+input[type=password]{
+    width: 90%;
+	height:6px;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+input[type=password]{
+    width: 90%;
+	height:6px;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+
+
+
+
+
+input[type=file]{
+	position:relative;
+	background:rgba(10,108,109,0);
+    width: 60%;
+	height:20%;
+	padding: 3px 5px;
+   display:block-inline;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+div.error_class {
+	color:white;
+	left:20%;
+	right:10%;
+	width:70%;
+	position:absolute;
+	border-radius:4px;
+	display:block;
+    background:rgba(225,0,0,0.4);
+    padding:10px 5px;
+	box-sizing:border-box;
+}
+#errormsg1
+{
+	position:absolute;
+	color:#bc0100;
+	font-size:17px;
+	font-weight:bold;
+	left:20%;
+}
+#headsignup{
+	position:relative;
+	color:rgb(255,255,255);
+	text-align:center;
+	font-size: 26px;
+	font-style:strong;
+}
+
+#success
+{
+	position:relative;
+	color:#0d4b51;
+	text-align:center;
+	font-size: 28px;
+	font-style:strong;
+}
+#forgotpass
+{
+	color:white;
+	position:absolute;
+	top:88%;
+	left:41.5%;
+}
+.container1 {
+	position:absolute;
+  width:50%;	
+  top:10%;
+  height:90%;
+  left:25%;
+  background:rgba(0,0,0,0.3);
+}
+#controllabel1
+{
+	position:relative;
+	font-size:18px;
+	left:35%;
+}
+#controllabel
+{
+	position:relative;
+	font-size:18px;
+	left: -50%;
+	
+}
+input[type=text].useridlogin{
+	position:relative;
+	left:-50%;
+    width: 200%;
+    
+    
+	
+}	
+
+input[type=text].useridlogin:focus{
+	border:2px solid #bc0100;
+}
+
+#subsignin{
+	color:white;
+    position:absolute;
+	top:90%;
+	left:40%;
+	width:20%;
+	height:8%;
+	padding: 12px 20px;
+   display:block;
+   background:rgba(255,255,255,0);
+   border:2px groove white;
+   box-sizing: border-box;
+}
+#imagefullname
+{
+	position:relative;
+	left:20%;
+}
+#controllabel3
+{
+	position:relative;
+	left:25%;
+
+}
+#subsignin:hover{
+	background-color:#350000;
+	font-weight:bold;
+	cursor:pointer;
+}
+input[type=password].passwordlogin{
+    position:relative;
+	width:100%;
+	
+	height:40%;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+input[type=password].passwordlogin:focus{
+        outline:none;	
+		border:2px solid #bc0100;
+	}
+input[type=password].passwordconfirm{
+    position:relative;
+	width:100%;
+	height:40%;
+
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+input[type=password].passwordconfirm:focus{
+        outline:none;	
+		border:2px solid #bc0100;
+	}	
+div.form-signin{
+	color:white;
+	left:25%;
+	width:50%;
+	position:absolute;
+	border-radius:1%;
+	display:block;
+    background:rgba(10,108,109,0);
+}
+/* END OF CSS FOR SIGNIN.PHP */
+#errormsg{
+	
+	color:#bc0100;
+	position:relative;
+	left:20%;
+	text-align:center;
+	
+}
+	input[type=email]{
+    width:100%;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+input[type=email]:focus{
+	
+	outline:none;
+	border:2px groove #bc0100;
+ }
+ 
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+    font-size: 1em;
+	position:relative;
+	width:40%;
+    font-weight: 700;
+    color: white;
+    background:rgba(10,108,109,0);
+    display: inline-block;
+	cursor:pointer;
+}
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color:#bc0100;
+}
+.inputfile + label * {
+	pointer-events: none;
+}
+.loginbutton {
+    background-color:transparent;
+        border: none;
+    position:absolute;
+    left:82%;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.registerbutton {
+    background-color:transparent; 
+    border: none;
+    color: white;
+    position:absolute;
+    left:87%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#errorcontent
+{
+	position:absolute;
+    left:0%;
+	width:30%;
+	font-size:12px;
+	font-weight: bold;
+
+}
+#usertypeselect
+{
+	position:relative;
+    padding:6px 6px;
+    left:-50%;
+	width:200%;
+	background-color:white;
+	display:block;
+	border-radius:6px;
+	color:black;
+}
+
+.useridlogin
+{
+	position:relative;
+	top:-50px;
+}
+
+
+}
+
+
+/* 768<=x<=991 tablets */
+  @media only screen and (min-width: 768px) and (max-width: 991px) 
+{ 
+
+html{
+  background:url("../photos/wallpaperwel.jpg");
+  background-size:cover;
+    }
+
+.box
+ {
+
+	position:absolute;
+	top:50%;
+	left:10%;
+	transform:translate(-50%,-50%);
+	width:80px;
+	height:80px;
+	background:transparent;
+	border: 4px solid #fff;
+	border-radius: 3px;
+	animation: 5s box infinite linear;
+
+ }
+
+ .box:before
+ {
+ 	content:'';
+ 	position:absolute;
+ 	width: 20px;
+ 	height: 20px;
+ 	background: #fff;
+ 	border-radius:50%;
+ 	box-shadow: inset 0 0 10px rgba(0,0,0,.5));
+    animation: 5s ball infinite linear;
+ }
+ @keyframes ball
+ {
+ 	0%
+ 	{
+ 		transform:translateX(50px) translateY(50px);
+ 	}
+ 	25%
+ 	{
+ 		transform:translateX(0px) translateY(50px);
+ 	}
+ 	50%
+ 	{
+ 		transform:translateX(0px) translateY(0px);
+ 	}
+ 	75%
+ 	{
+ 		transform:translateX(50px) translateY(0px);
+ 	}
+    100%
+ 	{
+ 		transform:translateX(50px) translateY(50px);
+ 	}
+ 
+ }
+
+ @keyframes box
+ {
+ 	0%
+ 	{
+ 		transform:translate(-50%,-50%) rotate(360deg);
+ 	}
+
+ 	100%
+ 	{
+ 	transform:translate(-50%,-50%) rotate(0deg);
+ 	}
+ }
+ 
+
+
+input[type=text]{
+    width: 90%;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+input[type=text]:focus{
+	
+	outline:none;
+	border:2px groove #bc0100;
+ }
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+	font-style:strong;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+	position:absolute;
+    background-color: #45a049;
+}
+input[type=password]{
+    
+	
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+input[type=password]{
+    
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+
+
+
+
+input[type=file]{
+	position:relative;
+	background:rgba(10,108,109,0);
+    width: 60%;
+	height:20%;
+	padding: 3px 5px;
+   display:block-inline;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+div.error_class {
+	color:white;
+	left:20%;
+	right:10%;
+	width:70%;
+	position:absolute;
+	border-radius:4px;
+	display:block;
+    background:rgba(225,0,0,0.4);
+    padding:10px 5px;
+	box-sizing:border-box;
+}
+#errormsg1
+{
+	position:absolute;
+	color:#bc0100;
+	font-size:17px;
+	font-weight:bold;
+	left:20%;
+}
+#headsignup{
+	position:relative;
+	color:rgb(255,255,255);
+	text-align:center;
+	font-size: 18px;
+	font-style:strong;
+}
+
+#success
+{
+	position:relative;
+	color:#0d4b51;
+	text-align:center;
+	font-size: 28px;
+	font-style:strong;
+}
+#forgotpass
+{
+	color:white;
+	position:absolute;
+	top:88%;
+	left:41.5%;
+}
+.container1 {
+	position:absolute;
+  width:50%;	
+  top:5%;
+  height:90%;
+  left:25%;
+  background:rgba(0,0,0,0.3);
+}
+#controllabel
+{
+	position:relative;
+	font-size:16px;
+	top:5%;
+}
+input[type=text].useridlogin{
+	position:relative;
+	width: 100%;
+	
+}	
+input[type=text].useridlogin:focus{
+	border:2px solid #bc0100;
+}
+input[type=email].useridlogin{
+	
+	position:relative;
+	top:5%;
+	width: 100%;
+	
+}	
+
+
+
+#subsignin{
+	color:white;
+    position:relative;
+	
+	left:25%;
+	width:45%;
+	height:4%;
+	padding: 12px 20px;
+   display:block;
+   background:rgba(255,255,255,0);
+   border:2px groove white;
+   box-sizing: border-box;
+}
+#subsignin:hover{
+	background-color:#350000;
+	font-weight:bold;
+	cursor:pointer;
+}
+input[type=password].passwordlogin{
+    position:relative;
+	width:100%;
+	height:40%;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+input[type=password].passwordlogin:focus{
+        outline:none;	
+		border:2px solid #bc0100;
+	}
+input[type=password].passwordconfirm{
+    position:relative;
+	width:100%;
+	height:40%;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+input[type=password].passwordconfirm:focus{
+        outline:none;	
+		border:2px solid #bc0100;
+	}	
+div.form-signin{
+	color:white;
+	left:25%;
+	width:50%;
+	position:absolute;
+	border-radius:1%;
+	display:block;
+    background:rgba(10,108,109,0);
+}
+/* END OF CSS FOR SIGNIN.PHP */
+#errormsg{
+	
+	color:#bc0100;
+	position:relative;
+	left:20%;
+	text-align:center;
+	
+}
+	input[type=email]{
+    width:100%;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+input[type=email]:focus{
+	
+	outline:none;
+	border:2px groove #bc0100;
+ }
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+    font-size: 1em;
+	position:relative;
+	width:40%;
+    font-weight: 700;
+    color: white;
+    background:rgba(10,108,109,0);
+    display: inline-block;
+	cursor:pointer;
+}
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color:#bc0100;
+}
+.inputfile + label * {
+	pointer-events: none;
+}
+.loginbutton {
+    background-color:transparent;
+        border: none;
+    position:absolute;
+    left:84%;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.registerbutton {
+    background-color:transparent; 
+    border: none;
+    color: white;
+    position:absolute;
+    left:90%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+#errorcontent
+{
+	position:absolute;
+    left:0%;
+	width:30%;
+	font-size:10px;
+	font-weight: bold;
+
+}
+
+
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+@media(min-width: 992px) and (max-width: 1199px) 
+{ 
+
+html{
+  background:url("../photos/wallpaperwel.jpg") ;
+  background-size:cover;
+    }
+
+ .box
+ {
+
+	position:absolute;
+	top:50%;
+	left:10%;
+	transform:translate(-50%,-50%);
+	width:80px;
+	height:80px;
+	background:transparent;
+	border: 4px solid #fff;
+	border-radius: 3px;
+	animation: 5s box infinite linear;
+
+ }
+
+ .box:before
+ {
+ 	content:'';
+ 	position:absolute;
+ 	width: 20px;
+ 	height: 20px;
+ 	background: #fff;
+ 	border-radius:50%;
+ 	box-shadow: inset 0 0 10px rgba(0,0,0,.5));
+    animation: 5s ball infinite linear;
+ }
+ @keyframes ball
+ {
+ 	0%
+ 	{
+ 		transform:translateX(50px) translateY(50px);
+ 	}
+ 	25%
+ 	{
+ 		transform:translateX(0px) translateY(50px);
+ 	}
+ 	50%
+ 	{
+ 		transform:translateX(0px) translateY(0px);
+ 	}
+ 	75%
+ 	{
+ 		transform:translateX(50px) translateY(0px);
+ 	}
+    100%
+ 	{
+ 		transform:translateX(50px) translateY(50px);
+ 	}
+ 
+ }
+
+ @keyframes box
+ {
+ 	0%
+ 	{
+ 		transform:translate(-50%,-50%) rotate(360deg);
+ 	}
+
+ 	100%
+ 	{
+ 	transform:translate(-50%,-50%) rotate(0deg);
+ 	}
+ }
+ 
+
+
+
+input[type=text]{
+    width: 90%;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+input[type=text]:focus{
+	
+	outline:none;
+	border:2px groove #bc0100;
+ }
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+	font-style:strong;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+	position:absolute;
+    background-color: #45a049;
+}
+input[type=password]{
+    width: 90%;
+	height:6px;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+input[type=password]{
+    width: 90%;
+	height:6px;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+
+
+
+
+input[type=file]{
+	position:relative;
+	background:rgba(10,108,109,0);
+    width: 60%;
+	height:20%;
+	padding: 3px 5px;
+   display:block-inline;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+div.error_class {
+	color:white;
+	left:20%;
+	right:10%;
+	width:70%;
+	position:absolute;
+	border-radius:4px;
+	display:block;
+    background:rgba(225,0,0,0.4);
+    padding:10px 5px;
+	box-sizing:border-box;
+}
+#errormsg1
+{
+	position:absolute;
+	color:#bc0100;
+	font-size:17px;
+	font-weight:bold;
+	left:20%;
+}
+#headsignup{
+	position:relative;
+	color:rgb(255,255,255);
+	text-align:center;
+	font-size: 26px;
+	font-style:strong;
+}
+
+#success
+{
+	position:relative;
+	color:#0d4b51;
+	text-align:center;
+	font-size: 28px;
+	font-style:strong;
+}
+#forgotpass
+{
+	color:white;
+	position:absolute;
+	top:88%;
+	left:41.5%;
+}
+.container1 {
+	position:absolute;
+  width:50%;	
+  top:5%;
+  height:90%;
+  left:25%;
+  background:rgba(0,0,0,0.3);
+}
+input[type=text].useridlogin{
+	position:relative;
+    width: 100%;
+	
+}	
+input[type=text].useridlogin:focus{
+	border:2px solid #bc0100;
+}
+
+#subsignin{
+	color:white;
+    position:relative;
+	left:25%;
+	width:40%;
+	height:6%;
+	padding: 12px 20px;
+   display:block;
+   background:rgba(255,255,255,0);
+   border:2px groove white;
+   box-sizing: border-box;
+}
+#subsignin:hover{
+	background-color:#350000;
+	font-weight:bold;
+	cursor:pointer;
+}
+input[type=password].passwordlogin{
+    position:relative;
+	width:100%;
+	height:40%;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+input[type=password].passwordlogin:focus{
+        outline:none;	
+		border:2px solid #bc0100;
+	}
+input[type=password].passwordconfirm{
+    position:relative;
+	width:100%;
+	height:40%;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+input[type=password].passwordconfirm:focus{
+        outline:none;	
+		border:2px solid #bc0100;
+	}	
+div.form-signin{
+	color:white;
+	left:25%;
+	width:50%;
+	position:absolute;
+	border-radius:1%;
+	display:block;
+    background:rgba(10,108,109,0);
+}
+/* END OF CSS FOR SIGNIN.PHP */
+#errormsg{
+	
+	color:#bc0100;
+	position:relative;
+	left:20%;
+	text-align:center;
+	
+}
+	input[type=email]{
+    width:100%;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+input[type=email]:focus{
+	
+	outline:none;
+	border:2px groove #bc0100;
+ }
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+    font-size: 1em;
+	position:relative;
+	width:40%;
+    font-weight: 700;
+    color: white;
+    background:rgba(10,108,109,0);
+    display: inline-block;
+	cursor:pointer;
+}
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color:#bc0100;
+}
+.inputfile + label * {
+	pointer-events: none;
+}
+.loginbutton {
+    background-color:transparent;
+        border: none;
+    position:absolute;
+    left:84%;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.registerbutton {
+    background-color:transparent; 
+    border: none;
+    color: white;
+    position:absolute;
+    left:90%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#errorcontent
+{
+	position:absolute;
+    left:0%;
+	width:30%;
+	font-size:10px;
+	font-weight: bold;
+
+}
+
+}
+
+

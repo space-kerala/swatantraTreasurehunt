@@ -11,9 +11,10 @@ class HomeController extends Controller
      *
      * @return void
      */
-    public function __construct()
+        public function __construct()
     {
-        $this->middleware('auth');
+
+        $this->middleware('guest');
     }
 
     /**
@@ -23,6 +24,32 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        return view('welcome');
     }
+
+      public function welcomeredirect()
+    {
+        return view('welcomeerrorcorrection');
+ 
+    }
+
+
+      /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function createsymlink()
+    {
+        
+    $target = '/var/www/html/swatantrahunt/storage/app/public'; 
+    $shortcut = '/var/www/html/swatantrahunt/public/storage'; 
+    symlink($target, $shortcut); 
+    return 'symlink created';
+
+    }
+
+
+
+
 }

@@ -1,0 +1,657 @@
+ /* very small devices width less than 768 */
+ @media only screen and  (max-width: 767px)
+{
+
+html{
+
+background:url("../photos/profilepagemobile.jpg");
+  background-size:cover;
+}
+#proelement,#labid
+{
+	font-size:20px;
+
+}
+input[type=file]
+{
+	display:inline-block;
+}
+#topmostcontainer
+{
+
+  background:url("../photos/profilepagemobile.jpg")no-repeat ;
+  background-size:cover; 
+}
+
+#toplevel
+{
+	background-color:rgba(0, 0, 0,0.7);
+	border-radius:6px;
+
+}
+
+span
+{
+	font-weight:bold;
+	font-size:18px;
+	text-align:right;
+
+}
+
+#profimg
+{
+
+position:relative;
+width:80px;
+height:80px;
+left:35%;
+border-radius:50%;
+margin-right:25px;
+}
+#proelement1
+{
+
+	margin-left:0px;
+	margin-right:20px;
+	color:white;
+
+}
+
+#proelement2
+{
+    color:white;
+	margin-right:50px;
+	
+}
+
+#proelement3
+{
+
+color:white;
+	
+}
+
+#proelement4
+{
+    color:white;
+	margin-left:0px;
+	margin-right:17px;
+	
+}
+
+#proelement5
+{
+
+	color:white;
+	margin-right:30px;
+	
+}
+
+#proelement6
+{
+
+color:white;
+	
+}
+
+#proelement7
+{
+
+    color:white;
+	margin-left:0px;
+	margin-right:0px;
+	font-size:15px;
+	
+}
+
+#proelement8
+{
+
+	color:white;
+	margin-right:0px;
+	font-size: 15px;
+	
+}
+
+#proelement9
+{
+
+        font-size:15px;
+		color:white;
+}
+
+#proelement10
+{
+
+    color:white;
+	margin-left:0px;
+	margin-right:8px;
+	
+}
+
+#proelement11
+{
+
+	color:white;
+	margin-right:60px;
+	
+}
+
+#proelement12
+{
+
+	color:white;
+	
+}
+#labid
+{
+
+color:white;
+margin-left:0px;
+margin-right:0px;
+}
+
+#filebrowse
+{
+	margin-left:0px;
+}
+#imguploadbutton
+{
+
+	 margin-left:100px;
+
+}
+
+
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px)
+{ 
+
+html{
+
+background:url("../photos/profilewallpaper.jpg")no-repeat ;
+  background-size:cover;
+}
+#proelement,#labid
+{
+	font-size:20px;
+
+}
+input[type=file]
+{
+	display:inline-block;
+}
+#topmostcontainer
+{
+  background:url("../photos/profilewallpaper.jpg")no-repeat ;
+  background-size:cover; 
+}
+#toplevel
+{
+	background-color:rgba(0, 0, 0,0.7);
+	border-radius:8px;
+}
+
+span
+{
+	font-weight:bold;
+	font-size:20px;
+
+}
+
+#profimg
+{
+
+
+width:150px;
+height:150px;
+float:left;
+border-radius:50%;
+margin-right:25px;
+}
+#proelement1
+{
+
+	margin-left:50px;
+	margin-right:80px;
+	color:white;
+
+}
+
+#proelement2
+{
+    color:white;
+	margin-right:60px;
+	
+}
+
+#proelement3
+{
+
+color:white;
+	
+}
+
+#proelement4
+{
+    color:white;
+	margin-left:50px;
+	margin-right:73px;
+	
+}
+
+#proelement5
+{
+
+	color:white;
+	margin-right:60px;
+	
+}
+
+#proelement6
+{
+
+color:white;
+	
+}
+
+#proelement7
+{
+
+    color:white;
+	margin-left:50px;
+	margin-right:80px;
+	
+}
+
+#proelement8
+{
+
+	color:white;
+	margin-right:60px;
+	
+}
+
+#proelement9
+{
+
+		color:white;
+}
+
+#proelement10
+{
+
+    color:white;
+	margin-left:50px;
+	margin-right:61px;
+	
+}
+
+#proelement11
+{
+
+	color:white;
+	margin-right:60px;
+	
+}
+
+#proelement12
+{
+
+	color:white;
+	
+}
+#labid
+{
+
+color:white;
+margin-left:50px;
+margin-right:60px;
+}
+
+#imguploadbutton
+{
+
+	 margin-left:450px;
+	 
+}
+
+
+}
+
+
+
+
+
+
+/* 768<=x<=991 tablets */
+  @media only screen and (min-width: 768px) and (max-width: 991px) 
+{ 
+
+html{
+
+background:url("../photos/profilepagesmalldesktop.jpg");
+  background-size:cover;
+}
+#proelement,#labid
+{
+	font-size:20px;
+
+}
+input[type=file]
+{
+	display:inline-block;
+}
+#topmostcontainer
+{
+  background:url("../photos/profilewallpaper.jpg")no-repeat ;
+  background-size:cover;
+}
+
+#toplevel
+{
+	background-color:rgba(0, 0, 0,0.7);
+	border-radius:8px;
+}
+
+span
+{
+	font-weight:bold;
+	font-size:20px;
+
+}
+
+#profimg
+{
+
+
+width:150px;
+height:150px;
+float:left;
+border-radius:50%;
+margin-right:25px;
+}
+#proelement1
+{
+
+	margin-left:50px;
+	margin-right:80px;
+	color:white;
+
+}
+
+#proelement2
+{
+    color:white;
+	margin-right:60px;
+	
+}
+
+#proelement3
+{
+
+color:white;
+	
+}
+
+#proelement4
+{
+    color:white;
+	margin-left:50px;
+	margin-right:73px;
+	
+}
+
+#proelement5
+{
+
+	color:white;
+	margin-right:60px;
+	
+}
+
+#proelement6
+{
+
+color:white;
+	
+}
+
+#proelement7
+{
+
+    color:white;
+	margin-left:50px;
+	margin-right:80px;
+	
+}
+
+#proelement8
+{
+
+	color:white;
+	margin-right:60px;
+	
+}
+
+#proelement9
+{
+
+		color:white;
+}
+
+#proelement10
+{
+
+    color:white;
+	margin-left:50px;
+	margin-right:61px;
+	
+}
+
+#proelement11
+{
+
+	color:white;
+	margin-right:60px;
+	
+}
+
+#proelement12
+{
+
+	color:white;
+	
+}
+#labid
+{
+
+color:white;
+margin-left:50px;
+margin-right:40px;
+}
+#filebrowse
+{
+	margin-left:0px;
+}
+
+#imguploadbutton
+{
+
+	 margin-left:430px;
+	 
+}
+
+
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+@media(min-width: 992px) and (max-width: 1199px) 
+{ 
+
+html{
+
+background:url("../photos/profilepagesmalldesktop.jpg")no-repeat ;
+  background-size:cover;
+}
+#proelement,#labid
+{
+	font-size:20px;
+
+}
+input[type=file]
+{
+	display:inline-block;
+}
+#topmostcontainer
+{
+  background:url("../photos/profilewallpaper.jpg")no-repeat ;
+  background-size:cover;
+}
+
+#toplevel
+{
+	background-color:rgba(0, 0, 0,0.7);
+	border-radius:8px;
+}
+
+span
+{
+	font-weight:bold;
+	font-size:20px;
+
+}
+
+#profimg
+{
+
+
+width:150px;
+height:150px;
+float:left;
+border-radius:50%;
+margin-right:25px;
+}
+#proelement1
+{
+
+	margin-left:50px;
+	margin-right:80px;
+	color:white;
+
+}
+
+#proelement2
+{
+    color:white;
+	margin-right:60px;
+	
+}
+
+#proelement3
+{
+
+color:white;
+	
+}
+
+#proelement4
+{
+    color:white;
+	margin-left:50px;
+	margin-right:73px;
+	
+}
+
+#proelement5
+{
+
+	color:white;
+	margin-right:60px;
+	
+}
+
+#proelement6
+{
+
+color:white;
+	
+}
+
+#proelement7
+{
+
+    color:white;
+	margin-left:50px;
+	margin-right:80px;
+	
+}
+
+#proelement8
+{
+
+	color:white;
+	margin-right:60px;
+	
+}
+
+#proelement9
+{
+
+		color:white;
+}
+
+#proelement10
+{
+
+    color:white;
+	margin-left:50px;
+	margin-right:61px;
+	
+}
+
+#proelement11
+{
+
+	color:white;
+	margin-right:60px;
+	
+}
+
+#proelement12
+{
+
+	color:white;
+	
+}
+#labid
+{
+
+color:white;
+margin-left:50px;
+margin-right:60px;
+}
+
+#imguploadbutton
+{
+
+	 margin-left:450px;
+	 
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+

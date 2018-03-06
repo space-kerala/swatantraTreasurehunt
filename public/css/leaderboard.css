@@ -1,0 +1,338 @@
+ /* very small devices width less than 768 */
+ @media only screen and  (max-width: 767px)
+{ 
+
+#mainbody{
+  background:url("../photos/huntpagemobile.jpg")no-repeat;
+  background-size:cover;
+    }
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color:#344C72;
+}    
+
+table-fixed thead {
+  width: 97%;
+}
+
+#topmostcontainer
+{
+ 
+  width:100%; 
+  background:transparent;
+  background-size:cover;
+}
+#toplevel
+{
+
+  width:100%;
+  background-color:rgba(0, 0, 0,0.7)
+}
+tr
+{
+  color:white;
+}
+.row
+{
+  color:white;
+  font-weight:bold;
+}
+.table-fixed tbody {
+  height: 460px;
+  overflow-y: auto;
+  width: 100%;
+}
+.table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
+  display: block;
+}
+.table-fixed tbody td, .table-fixed thead > tr> th {
+  float: left;
+  border-bottom-width: 0;
+}
+
+#formobilehead
+{
+  font-size:8px;
+}
+
+#formobileheadcollege
+{
+
+  font-size:7px;
+  text-align:left;
+}
+#formobileheadtime
+{
+
+  font-size:7px;
+  text-align:right;
+}
+
+#currentname,#currentposition,#currentlevel,#college
+{
+  font-size: 8px;
+}
+#displaymyrank
+{
+color:white;
+font-weight:bold;
+font-size: 10px;
+background-color:rgba(0, 0, 0,.5);
+border-radius:4px;
+
+margin-left:0px;
+}
+
+#clickrow
+{
+  position:absolute;
+  left:2.5%;
+  width:95%;
+  height:2%;
+  font-size:5px;
+  top:98%;
+  font-weight:bold;
+  text-align:center;
+  background-color:rgba(255,255,255,0.5);
+  color:rgb(131,3,0);
+}
+
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px)
+{ 
+
+#mainbody{
+  background:url("../photos/leaderboarddesktop.jpg") no-repeat;
+  background-size:cover;
+    }
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color:#344C72;
+}    
+
+table-fixed thead {
+  width: 97%;
+}
+
+#topmostcontainer
+{
+  
+  background:transparent;
+  background-size:cover;
+}
+#toplevel
+{
+
+  background-color:rgba(0, 0, 0,0.7)
+}
+tr
+{
+  color:white;
+}
+.row
+{
+  color:white;
+  font-weight:bold;
+}
+.table-fixed tbody {
+  height: 460px;
+  overflow-y: auto;
+  width: 100%;
+}
+.table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
+  display: block;
+}
+.table-fixed tbody td, .table-fixed thead > tr> th {
+  float: left;
+  border-bottom-width: 0;
+}
+
+#displaymyrank
+{
+color:white;
+font-weight:bold;
+background-color:rgba(33, 2, 2,1);
+font-size: 20px;
+margin-left:470px;
+border-radius: 6px;
+ 
+}
+#clickrow
+{
+  position:absolute;
+  left:2.5%;
+  width:95%;
+  height:3%;
+  top:97%;
+  font-weight:bold;
+  text-align:center;
+  background-color:rgba(255,255,255,0.5);
+  color:rgb(131,3,0);
+}
+
+}
+
+
+
+/* 768<=x<=991 tablets */
+  @media only screen and (min-width: 768px) and (max-width: 991px) 
+{ 
+
+#mainbody{
+  background:url("../photos/leaderboard768991.jpg") no-repeat;
+  background-size:cover;
+    }
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color:#344C72;
+}    
+
+table-fixed thead {
+  width: 97%;
+}
+
+#topmostcontainer
+{
+  
+  background:transparent;
+  background-size:cover;
+}
+#toplevel
+{
+
+  background-color:rgba(0, 0, 0,0.7)
+}
+tr
+{
+  color:white;
+}
+.row
+{
+  color:white;
+  font-weight:bold;
+}
+.table-fixed tbody {
+  height: 460px;
+  overflow-y: auto;
+  width: 100%;
+}
+.table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
+  display: block;
+}
+.table-fixed tbody td, .table-fixed thead > tr> th {
+  float: left;
+  border-bottom-width: 0;
+}
+
+#displaymyrank
+{
+color:white;
+font-weight:bold;
+background-color:rgba(33, 2, 2,1);
+font-size: 15px;
+margin-left:310px;
+border-radius: 6px;
+ 
+}
+
+#clickrow
+{
+  position:absolute;
+  left:2.5%;
+  width:95%;
+  height:3%;
+  top:97%;
+  font-weight:bold;
+  text-align:center;
+  background-color:rgba(255,255,255,0.5);
+  color:rgb(131,3,0);
+}
+
+
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+@media(min-width: 992px) and (max-width: 1199px) 
+{ 
+
+#mainbody{
+  background:url("../photos/leaderboard9911200.jpg") no-repeat;
+  background-size:cover;
+    }
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color:#344C72;
+}    
+
+table-fixed thead {
+  width: 97%;
+}
+
+#topmostcontainer
+{
+  
+  background:transparent;
+  background-size:cover;
+}
+#toplevel
+{
+
+  background-color:rgba(0, 0, 0,0.7)
+}
+tr
+{
+  color:white;
+}
+.row
+{
+  color:white;
+  font-weight:bold;
+}
+.table-fixed tbody {
+  height: 460px;
+  overflow-y: auto;
+  width: 100%;
+}
+.table-fixed thead, .table-fixed tbody, .table-fixed tr, .table-fixed td, .table-fixed th {
+  display: block;
+}
+.table-fixed tbody td, .table-fixed thead > tr> th {
+  float: left;
+  border-bottom-width: 0;
+}
+
+#displaymyrank
+{
+color:white;
+font-weight:bold;
+background-color:rgba(33, 2, 2,1);
+font-size: 15px;
+margin-left:350px;
+ border-radius: 6px;
+}
+
+#clickrow
+{
+  position:absolute;
+  left:2.5%;
+  width:95%;
+  height:3%;
+  top:97%;
+  font-weight:bold;
+  text-align:center;
+  background-color:rgba(255,255,255,0.5);
+  color:rgb(131,3,0);
+}
+
+}
+
+
+
+
+
+
+

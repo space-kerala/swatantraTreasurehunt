@@ -1,69 +1,66 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/signin.css">
+</head>
+<body>
 
-@section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Login</div>
 
-                <div class="panel-body">
-                    <form class="form-horizontal" method="POST" action="{{ route('login') }}">
-                        {{ csrf_field() }}
+ @if (Auth::guest())
+                            <a class="loginbutton" href="{{ route('login') }}" style="color:white;">Login</a>
+                            <a class="registerbutton" href="{{ route('register') }}"" style="color:white;">Register</a>
 
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
+@endif
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
 
-                                @if ($errors->has('email'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                            <label for="password" class="col-md-4 control-label">Password</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control" name="password" required>
-
-                                @if ($errors->has('password'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-8 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
-                                    Login
-                                </button>
-
-                                <a class="btn btn-link" href="{{ route('password.request') }}">
-                                    Forgot Your Password?
-                                </a>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+@if (session('statustrue'))
+    <div class="alert alert-success">
+        {{ session('statustrue') }}
     </div>
+ @elseif((session('statusalready')))
+    <div class="alert alert-warning">
+        {{ session('statusalready') }}
+    </div>
+ @elseif((session('statusfalse')))
+     <div class="alert alert-danger">
+        {{ session('statusfalse') }}
+    </div>
+
+@endif
+
+<div class="form-error">
+@include('layout.errors')
 </div>
-@endsection
+
+<!--ball in the box div -->
+<div class="box"></div>
+
+
+
+<div class="container1">
+@if((session('status0')))
+    <div class="alert alert-danger">
+        {{ session('status0') }}
+        {{ session()->forget('status0')}}
+    </div>
+
+@endif
+<form method="POST" action="{{ route('login') }}">
+{{csrf_field() }}
+<p id="headsignup"><strong>Login</strong></p>
+<div class="form-signin">
+<label for="email" id="controllabel">* Email</label>
+ <input type="email" name="email" class="useridlogin" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="Email" required>
+ 
+  <label for="password" id="controllabel">Password</label>
+ <input type="password" class="passwordlogin" id="passwordlogin" name="password" placeholder="Enter Password" required>
+ <br>
+  <button id="subsignin" type="submit">Sign In</button>
+<a href="{{route('password.request')}}" style="text-decoration:none;"><p id="forgotpass">forgot password</p></a>
+ </div>
+ 
+</form>
+</div>
+</body>
+</html>

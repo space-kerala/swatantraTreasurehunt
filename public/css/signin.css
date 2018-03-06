@@ -1,0 +1,1246 @@
+
+ /* very small devices width less than 768 */
+ @media only screen and  (max-width: 767px)
+{ 
+
+
+html
+{
+  background:url("../photos/wallpaperwel.jpg");
+  background-size:cover;
+}
+
+ .box
+ {
+
+	position:absolute;
+	top:20%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	width:80px;
+	height:80px;
+	background:transparent;
+	border: 4px solid #fff;
+	border-radius: 3px;
+	animation: 5s box infinite linear;
+
+ }
+
+ .box:before
+ {
+ 	content:'';
+ 	position:absolute;
+ 	width: 20px;
+ 	height: 20px;
+ 	background: #fff;
+ 	border-radius:50%;
+ 	box-shadow: inset 0 0 10px rgba(0,0,0,.5);
+    animation: 5s ball infinite linear;
+ }
+ @keyframes ball
+ {
+ 	0%
+ 	{
+ 		transform:translateX(50px) translateY(50px);
+ 	}
+ 	25%
+ 	{
+ 		transform:translateX(0px) translateY(50px);
+ 	}
+ 	50%
+ 	{
+ 		transform:translateX(0px) translateY(0px);
+ 	}
+ 	75%
+ 	{
+ 		transform:translateX(50px) translateY(0px);
+ 	}
+    100%
+ 	{
+ 		transform:translateX(50px) translateY(50px);
+ 	}
+ 
+ }
+
+ @keyframes box
+ {
+ 	0%
+ 	{
+ 		transform:translate(-50%,-50%) rotate(360deg);
+ 	}
+
+ 	100%
+ 	{
+ 	transform:translate(-50%,-50%) rotate(0deg);
+ 	}
+ }
+
+
+
+
+
+input[type=text]{
+    width: 90%;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+input[type=text]:focus{
+	
+	outline:none;
+	border:2px groove #bc0100;
+ }
+
+
+	
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+	font-style:strong;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+	position:absolute;
+    background-color: #45a049;
+}
+input[type=password]{
+    width: 90%;
+	height:6px;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+input[type=password]{
+    width: 90%;
+	height:6px;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+
+
+
+#errormsg1
+{
+	position:absolute;
+	color:#bc0100;
+	font-size:17px;
+	font-weight:bold;
+	left:20%;
+}
+#headsignup{
+	position:relative;
+	color:rgb(255,255,255);
+	text-align:center;
+	font-size: 26px;
+	font-style:strong;
+}
+
+#success
+{
+	position:relative;
+	color:#0d4b51;
+	text-align:center;
+	font-size: 28px;
+	font-style:strong;
+}
+#forgotpass
+{
+	color:white;
+	position:relative;
+	text-decoration: none;
+	text-align:center;
+	left:-5%;
+	top:-12px;
+	
+}
+.container1 {
+	position:absolute;
+  width:80%;	
+  top:38%;
+  height:60%;
+  left:10%;
+  background:rgba(0,0,0,0.3);
+}
+input[type=text].useridlogin{
+	position:absolute;
+    width: 100%;
+	
+}	
+input[type=text].useridlogin:focus{
+	border:2px solid #bc0100;
+}
+
+#subsignin{
+	color:white;
+    position:relative;
+	left:20%;
+	font-size:10px
+	width:30%;
+	height:13%;
+	padding: 12px 20px;
+   display:block;
+   background:rgba(255,255,255,0);
+   border:2px groove white;
+   box-sizing: border-box;
+   border-radius:6px;
+}
+#subsignin:hover{
+	background-color:#350000;
+	font-weight:bold;
+	cursor:pointer;
+}
+input[type=password].passwordlogin{
+    position:relative;
+	width:100%;
+	height:40%;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+   border-radius: 6px;
+}
+input[type=password].passwordlogin:focus{
+        outline:none;	
+		border:2px solid #bc0100;
+	}
+div.form-signin{
+	color:white;
+	left:18%;
+	width:70%;
+	position:absolute;
+	border-radius:1%;
+	display:block;
+    background:rgba(10,108,109,0);
+}
+/* END OF CSS FOR SIGNIN.PHP */
+#errormsg{
+	
+	color:#bc0100;
+	position:relative;
+	left:20%;
+	text-align:center;
+	
+}
+	input[type=email]{
+     width:100%;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+   border-radius:6px;
+}
+input[type=email]:focus{
+	
+	outline:none;
+	border:2px groove rgb(152,11,11);
+ }
+.alert-success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+.alert-info {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+.alert-warning {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+.alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+ }
+
+.loginbutton {
+    background-color:transparent;
+        border: none;
+    position:absolute;
+    left:60%;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.registerbutton {
+    background-color:transparent; 
+    border: none;
+    color: white;
+    position:absolute;
+    left:75%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.form-error
+{ 
+	position:absolute;
+       width:100%;
+	top:4%;
+	color:red;
+	font-size:12px; 
+}
+
+
+
+
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px)
+{ 
+
+html
+{
+  background:url("../photos/wallpaperwel.jpg") ;
+  background-size:cover;
+}
+
+ .box
+ {
+
+	position:absolute;
+	top:20%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	width:80px;
+	height:80px;
+	background:transparent;
+	border: 4px solid #fff;
+	border-radius: 3px;
+	animation: 5s box infinite linear;
+
+ }
+
+ .box:before
+ {
+ 	content:'';
+ 	position:absolute;
+ 	width: 20px;
+ 	height: 20px;
+ 	background: #fff;
+ 	border-radius:50%;
+ 	box-shadow: inset 0 0 10px rgba(0,0,0,.5);
+    animation: 5s ball infinite linear;
+ }
+ @keyframes ball
+ {
+ 	0%
+ 	{
+ 		transform:translateX(50px) translateY(50px);
+ 	}
+ 	25%
+ 	{
+ 		transform:translateX(0px) translateY(50px);
+ 	}
+ 	50%
+ 	{
+ 		transform:translateX(0px) translateY(0px);
+ 	}
+ 	75%
+ 	{
+ 		transform:translateX(50px) translateY(0px);
+ 	}
+    100%
+ 	{
+ 		transform:translateX(50px) translateY(50px);
+ 	}
+ 
+ }
+
+ @keyframes box
+ {
+ 	0%
+ 	{
+ 		transform:translate(-50%,-50%) rotate(360deg);
+ 	}
+
+ 	100%
+ 	{
+ 	transform:translate(-50%,-50%) rotate(0deg);
+ 	}
+ }
+
+
+
+
+
+input[type=text]{
+    width: 90%;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+    border-radius:6px;
+}
+input[type=text]:focus{
+	
+	outline:none;
+	border:2px groove #bc0100;
+ }
+
+
+	
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+	font-style:strong;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+	position:absolute;
+    background-color: #45a049;
+}
+input[type=password]{
+    width: 90%;
+	height:6px;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+    border-radius:6px;
+}
+input[type=password]{
+    width: 90%;
+	height:6px;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+
+
+
+#errormsg1
+{
+	position:absolute;
+	color:#bc0100;
+	font-size:17px;
+	font-weight:bold;
+	left:20%;
+}
+#headsignup{
+	position:relative;
+	color:rgb(255,255,255);
+	text-align:center;
+	font-size: 26px;
+	font-style:strong;
+}
+
+
+#success
+{
+	position:relative;
+	color:#0d4b51;
+	text-align:center;
+	font-size: 28px;
+	font-style:strong;
+}
+#forgotpass
+{
+	color:white;
+	position:relative;
+	text-decoration: none;
+	text-align:center;
+}
+.container1 {
+	position:absolute;
+  width:50%;	
+  top:38%;
+  height:50%;
+  left:25%;
+  background:rgba(0,0,0,0.3);
+}
+input[type=text].useridlogin{
+	position:absolute;
+    width: 100%;
+	
+}	
+input[type=text].useridlogin:focus{
+	border:2px solid #bc0100;
+}
+
+#subsignin{
+	color:white;
+   position:relative;
+	left:33%;
+	width:30%;
+	height:13%;
+	padding: 12px 20px;
+   display:block;
+   background:rgba(255,255,255,0);
+   border:2px groove white;
+   box-sizing: border-box;
+    border-radius:6px;
+}
+#subsignin:hover{
+	background-color:#350000;
+	font-weight:bold;
+	cursor:pointer;
+}
+input[type=password].passwordlogin{
+    position:relative;
+	width:100%;
+	height:40%;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+input[type=password].passwordlogin:focus{
+        outline:none;	
+		border:2px solid #bc0100;
+	}
+div.form-signin{
+	color:white;
+	left:25%;
+	width:50%;
+	position:absolute;
+	border-radius:1%;
+	display:block;
+    background:rgba(10,108,109,0);
+}
+
+#errormsg{
+	
+	color:#bc0100;
+	position:relative;
+	left:20%;
+	text-align:center;
+	
+}
+
+ 
+			
+	input[type=email]{
+     width:100%;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+    border-radius:6px;
+
+}
+input[type=email]:focus{
+	
+	outline:none;
+	border:2px groove rgb(152,11,11);
+ }
+ 
+
+.alert-success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+.alert-info {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+.alert-warning {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+.alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+ }
+
+
+.loginbutton {
+    background-color:transparent;
+        border: none;
+    position:absolute;
+    left:82%;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.registerbutton {
+    background-color:transparent; 
+    border: none;
+    color: white;
+    position:absolute;
+    left:87%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.form-error
+{
+	color:red;
+}
+
+
+
+}
+
+
+
+/* 768<=x<=991 tablets */
+  @media only screen and (min-width: 768px) and (max-width: 991px) 
+{ 
+
+
+html
+{
+  background:url("../photos/wallpaperwel.jpg");
+  background-size:cover;
+}
+
+ .box
+ {
+
+	position:absolute;
+	top:20%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	width:80px;
+	height:80px;
+	background:transparent;
+	border: 4px solid #fff;
+	border-radius: 3px;
+	animation: 5s box infinite linear;
+
+ }
+
+ .box:before
+ {
+ 	content:'';
+ 	position:absolute;
+ 	width: 20px;
+ 	height: 20px;
+ 	background: #fff;
+ 	border-radius:50%;
+ 	box-shadow: inset 0 0 10px rgba(0,0,0,.5);
+    animation: 5s ball infinite linear;
+ }
+ @keyframes ball
+ {
+ 	0%
+ 	{
+ 		transform:translateX(50px) translateY(50px);
+ 	}
+ 	25%
+ 	{
+ 		transform:translateX(0px) translateY(50px);
+ 	}
+ 	50%
+ 	{
+ 		transform:translateX(0px) translateY(0px);
+ 	}
+ 	75%
+ 	{
+ 		transform:translateX(50px) translateY(0px);
+ 	}
+    100%
+ 	{
+ 		transform:translateX(50px) translateY(50px);
+ 	}
+ 
+ }
+
+ @keyframes box
+ {
+ 	0%
+ 	{
+ 		transform:translate(-50%,-50%) rotate(360deg);
+ 	}
+
+ 	100%
+ 	{
+ 	transform:translate(-50%,-50%) rotate(0deg);
+ 	}
+ }
+
+
+
+
+
+input[type=text]{
+    width: 90%;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+input[type=text]:focus{
+	
+	outline:none;
+	border:2px groove #bc0100;
+ }
+
+
+	
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+	font-style:strong;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+	position:absolute;
+    background-color: #45a049;
+}
+input[type=password]{
+    width: 90%;
+	height:6px;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+input[type=password]{
+    width: 90%;
+	height:6px;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+
+
+
+#errormsg1
+{
+	position:absolute;
+	color:#bc0100;
+	font-size:17px;
+	font-weight:bold;
+	left:20%;
+}
+#headsignup{
+	position:relative;
+	color:rgb(255,255,255);
+	text-align:center;
+	font-size: 26px;
+	font-style:strong;
+}
+
+#success
+{
+	position:relative;
+	color:#0d4b51;
+	text-align:center;
+	font-size: 28px;
+	font-style:strong;
+}
+#forgotpass
+{
+	color:white;
+	position:relative;
+	text-decoration: none;
+	text-align: center;
+}
+.container1 {
+	position:absolute;
+  width:50%;	
+  top:38%;
+  height:50%;
+  left:25%;
+  background:rgba(0,0,0,0.3);
+}
+input[type=text].useridlogin{
+	position:absolute;
+    width: 100%;
+	
+}	
+input[type=text].useridlogin:focus{
+	border:2px solid #bc0100;
+}
+
+#subsignin{
+	color:white;
+  position:relative;
+	left:30%;
+	width:40%;
+	height:15%;
+	padding: 12px 20px;
+   display:block;
+   background:rgba(255,255,255,0);
+   border:2px groove white;
+   box-sizing: border-box;
+   border-radius: 6px;
+}
+#subsignin:hover{
+	background-color:#350000;
+	font-weight:bold;
+	cursor:pointer;
+}
+input[type=password].passwordlogin{
+    position:relative;
+	width:100%;
+	height:40%;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+   border-radius:6px;
+}
+input[type=password].passwordlogin:focus{
+        outline:none;	
+		border:2px solid #bc0100;
+	}
+div.form-signin{
+	color:white;
+	left:25%;
+	width:50%;
+	position:absolute;
+	border-radius:1%;
+	display:block;
+    background:rgba(10,108,109,0);
+}
+/* END OF CSS FOR SIGNIN.PHP */
+#errormsg{
+	
+	color:#bc0100;
+	position:relative;
+	left:20%;
+	text-align:center;
+	
+}
+input[type=email]{
+     width:100%;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+    border-radius:6px;
+
+}
+
+input[type=email]:focus{
+	
+	outline:none;
+	border:2px groove rgb(152,11,11);
+ }
+ 
+.alert-success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+.alert-info {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+.alert-warning {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+.alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+ }
+
+
+.loginbutton {
+    background-color:transparent;
+        border: none;
+    position:absolute;
+    left:84%;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.registerbutton {
+    background-color:transparent; 
+    border: none;
+    color: white;
+    position:absolute;
+    left:90%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px; 
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.form-error
+{
+	color:red;
+}
+
+
+
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+@media(min-width: 992px) and (max-width: 1199px) 
+{
+
+
+html
+{
+  background:url("../photos/wallpaperwel.jpg");
+  background-size:cover;
+}
+
+ .box
+ {
+
+	position:absolute;
+	top:20%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	width:80px;
+	height:80px;
+	background:transparent;
+	border: 4px solid #fff;
+	border-radius: 3px;
+	animation: 5s box infinite linear;
+
+ }
+
+ .box:before
+ {
+ 	content:'';
+ 	position:absolute;
+ 	width: 20px;
+ 	height: 20px;
+ 	background: #fff;
+ 	border-radius:50%;
+ 	box-shadow: inset 0 0 10px rgba(0,0,0,.5);
+    animation: 5s ball infinite linear;
+ }
+ @keyframes ball
+ {
+ 	0%
+ 	{
+ 		transform:translateX(50px) translateY(50px);
+ 	}
+ 	25%
+ 	{
+ 		transform:translateX(0px) translateY(50px);
+ 	}
+ 	50%
+ 	{
+ 		transform:translateX(0px) translateY(0px);
+ 	}
+ 	75%
+ 	{
+ 		transform:translateX(50px) translateY(0px);
+ 	}
+    100%
+ 	{
+ 		transform:translateX(50px) translateY(50px);
+ 	}
+ 
+ }
+
+ @keyframes box
+ {
+ 	0%
+ 	{
+ 		transform:translate(-50%,-50%) rotate(360deg);
+ 	}
+
+ 	100%
+ 	{
+ 	transform:translate(-50%,-50%) rotate(0deg);
+ 	}
+ }
+
+
+
+
+
+input[type=text]{
+    width: 90%;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+input[type=text]:focus{
+	
+	outline:none;
+	border:2px groove #bc0100;
+ }
+
+
+	
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+	font-style:strong;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+	position:absolute;
+    background-color: #45a049;
+}
+input[type=password]{
+    width: 90%;
+	height:6px;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+input[type=password]{
+    width: 90%;
+	height:6px;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+}
+
+
+
+#errormsg1
+{
+	position:absolute;
+	color:#bc0100;
+	font-size:17px;
+	font-weight:bold;
+	left:20%;
+}
+#headsignup{
+	position:relative;
+	color:rgb(255,255,255);
+	text-align:center;
+	font-size: 26px;
+	font-style:strong;
+}
+
+#success
+{
+	position:relative;
+	color:#0d4b51;
+	text-align:center;
+	font-size: 28px;
+	font-style:strong;
+}
+#forgotpass
+{
+	color:white;
+	position:relative;
+	text-decoration: none;
+	text-align: center;
+}
+.container1 {
+	position:absolute;
+  width:50%;	
+  top:38%;
+  height:50%;
+  left:25%;
+  background:rgba(0,0,0,0.3);
+}
+input[type=text].useridlogin{
+	position:absolute;
+    width: 100%;
+	
+}	
+input[type=text].useridlogin:focus{
+	border:2px solid #bc0100;
+}
+
+#subsignin{
+	color:white;
+    position:relative;
+	left:30%;
+	width:40%;
+	height:13%;
+	padding: 12px 20px;
+   display:block;
+   background:rgba(255,255,255,0);
+   border:2px groove white;
+   box-sizing: border-box;
+   border-radius: 6px;
+}
+#subsignin:hover{
+	background-color:#350000;
+	font-weight:bold;
+	cursor:pointer;
+}
+input[type=password].passwordlogin{
+    position:relative;
+	width:100%;
+	height:40%;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+   border-radius: 6px;
+}
+input[type=password].passwordlogin:focus{
+        outline:none;	
+		border:2px solid #bc0100;
+	}
+div.form-signin{
+	color:white;
+	left:25%;
+	width:50%;
+	position:absolute;
+	border-radius:1%;
+	display:block;
+    background:rgba(10,108,109,0);
+}
+/* END OF CSS FOR SIGNIN.PHP */
+#errormsg{
+	
+	color:#bc0100;
+	position:relative;
+	left:20%;
+	text-align:center;
+	
+}
+
+	input[type=email]{
+     width:100%;
+	padding: 12px 20px;
+   display:block;
+   border:2px groove white;
+   box-sizing: border-box;
+   border-radius: 6px;
+}
+input[type=email]:focus{
+	
+	outline:none;
+	border:2px groove rgb(152,11,11);
+ }
+
+.alert-success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+.alert-info {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1;
+}
+.alert-warning {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+.alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+ }
+
+
+.loginbutton {
+    background-color:transparent;
+        border: none;
+    position:absolute;
+    left:84%;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.registerbutton {
+    background-color:transparent; 
+    border: none;
+    color: white;
+    position:absolute;
+    left:90%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.form-error
+{
+	color:red;
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

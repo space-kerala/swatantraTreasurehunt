@@ -18,11 +18,17 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
+            $table->string('usertype');
+            $table->string('college');
+            $table->string('verifyToken')->nullable();
+            $table->boolean('status')->default(0);
+            $table->boolean('blocked')->default(0);
+            $table->string('phoneno')->unique();
+            $table->string('profile_avatar')->default('default.jpg');
             $table->rememberToken();
             $table->timestamps();
         });
     }
-
     /**
      * Reverse the migrations.
      *

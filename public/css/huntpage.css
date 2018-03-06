@@ -1,0 +1,1275 @@
+ /* very small devices width less than 768 */
+ @media only screen and  (max-width: 767px)
+{ 
+
+
+
+#mainbody{
+  background:url("../photos/huntpagemobile.jpg")no-repeat ;
+  background-size:cover;
+    }
+
+#questionbox
+{
+ position:absolute;
+ top:40%;
+ width:70%;
+ left:15%;
+ height:40%;
+ color:white;
+ border-radius:6px;
+ background-color:rgba(0,0,0,.5);	
+ text-align:center;
+}   
+
+#questionboxcompleted
+{
+ position:absolute;
+ top:40%;
+ width:70%;
+ left:15%;
+ height:40%;
+ color:white;
+ border-radius:4px;
+ background-color:rgba(0,0,0,.5);	
+ text-align:center;
+}    
+
+
+#answerbox
+{
+ position:absolute;
+ top:87%;
+ width:105%;
+ left:8%;
+ background-color:transparent;	
+}
+#answertextbx
+{
+ position:relative;
+ height:30px;
+ font-size:13px;
+ border-radius:6px;
+ font-weight:bold;
+}
+#subbutton{
+
+
+border-radius:6px;
+}
+input[type=text]
+{
+	position:relative;
+	width:45%;
+	left:12%;
+	font-size:14px;
+}
+input[type=submit]
+{
+	position:relative;
+	left:15%;
+}
+#controllabel
+{
+	display:none;		
+	position:relative;
+	
+	left:0%;
+	font-size:15px;
+}
+#levelbox
+{
+	position:absolute;
+	top:35%;
+	height:5%;
+	left:30%;
+    width:40%;
+    text-align:center;
+       color:white;
+    background:url("../photos/levelboximage.jpg") no-repeat;
+	font-weight:bold;
+	font-size:20px;
+	border-radius: 8px;
+
+} 
+#levelboxcompleted
+{
+	position:absolute;
+	top:12%;
+	height:5%;
+	left:0%;
+    width:100%;
+    text-align:center;
+    border-radius:8px;
+   color:white;
+    background:url("../photos/levelboximage.jpg") repeat;
+	font-weight:bold;
+	font-size:20px;
+
+}
+
+#subbutton{
+
+height:35px;
+width:80px;
+margin-left:0px;
+border:none;
+background-color:rgba(0,0,0,.9);
+border-radius:6px;
+}
+#subbutton:hover
+{
+	font-weight:bold;
+	background:url("../photos/submitbuttonimage.jpg") no-repeat;
+
+}
+
+#questimage
+{
+	position:relative;
+	border-radius:5px;
+	width:100%;
+	height:auto;
+}
+
+/* users and attempts board css*/
+
+.cardsletter-container
+{
+
+	position:relative;
+	
+	perspective: 20;
+	display:block;
+	background:transparent;
+	color:black;
+	width:194px;
+    text-align:center;
+    top:0%;
+    
+
+}
+
+.cardletter
+{
+	position:relative;
+	margin:0px;
+	color:#fff;
+	text-align:center;
+	line-height:10px;
+	width:13px;
+	height:13px;
+	display:inline-block;
+	transition: all .3s ease;
+    transform-style: preserve-3d;
+    animation:digitboxflipanimation 4s infinite;
+     box-shadow: inset 2px 2px 2px rgba(0,0,0,.3) , 0 2px 0 #696969;
+    
+
+}
+
+.eachcardletterfront,.eachcardletterback
+{
+  position:absolute;
+  
+
+  background:url("../photos/levelboximage.jpg") repeat;
+  width:15px;
+  height:15px;
+  backface-visibility:hidden;
+}
+.eachcardletterback{
+    transform: rotateY(180deg);	
+}
+
+
+.hangingbox
+{
+	position:absolute;
+	top:12%;
+	left:22%;
+	
+	background: transparent;
+	background-size: cover;
+	width:197px;
+	height:140px;
+	text-align:center;
+	 transform-style: preserve-3d;
+	 -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Safari */
+    transform: rotate(0deg);
+
+}  
+
+.cards-container
+{
+	position:relative;
+	perspective: 20;
+	background:transparent;
+	color:black;
+	width:190px;
+    text-align:center;
+    top:0%;
+    
+
+}
+
+.card
+{
+	position:relative;
+	margin:3px;
+	color:#000;
+	text-align:center;
+	line-height:15px;
+	width:13px;
+	height:13px;
+	display:inline-block;
+	transition: all .3s ease;
+    transform-style: preserve-3d;
+    animation:digitboxflipanimation 4s infinite;
+     box-shadow: inset 2px 2px 2px rgba(0,0,0,.3) , 0 2px 0 #696969;
+    
+}
+
+.eachcardfront,.eachcardback
+{
+  position:absolute;
+  
+
+  background-color:white;
+  width:15px;
+  height:15px;
+  backface-visibility:hidden;
+}
+.eachcardback{
+    transform: rotateY(180deg);	
+}
+
+.fontclasscard
+{
+
+font-size:12px;
+font-weight:bold;
+
+}
+
+
+
+    @keyframes digitboxflipanimation
+{
+	
+	0%
+	{
+        transform: rotateY(180deg);			
+        box-shadow: inset 2px 2px 2px rgba(0,0,0,.3) , 0 2px 0 #696969;
+	}
+
+
+	100%
+	{
+		 transform: rotateY(0deg);			
+        box-shadow: inset 2 2 2 rgba(0,0,0,.3) , 0 2 0 #696969;
+ 
+	}
+	
+}
+    
+div.cards-container > div:nth-child(1)
+{
+	animation-delay:0s;
+
+}
+
+div.cards-container > div:nth-child(2)
+{
+	animation-delay:.1s;
+
+} 
+div.cards-container > div:nth-child(3)
+{
+	animation-delay:.2s;
+
+} 
+div.cards-container > div:nth-child(4)
+{
+	animation-delay:.3s;
+
+} 
+div.cards-container > div:nth-child(5)
+{
+	animation-delay:.4s;
+
+} 
+div.cards-container > div:nth-child(6)
+{
+	animation-delay:.5s;
+
+} 
+div.cards-container > div:nth-child(7)
+{
+	animation-delay: .6s;
+
+} 
+div.cards-container > div:nth-child(8)
+{
+	animation-delay:.7s;
+
+} 
+div.cards-container > div:nth-child(9)
+{
+	animation-delay:.8s;
+
+} 
+
+/* end of users and attempts board */
+
+#logoswat
+{
+	position:absolute;
+	left:3%;
+	top:97%;
+	left:0%;
+	height:3%;
+	width:auto;
+}
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px)
+{ 
+
+#mainbody{
+  background:url("../photos/huntpagedesktop.jpg") no-repeat;
+  background-size:cover;
+    }
+
+#questionbox
+{
+ position:absolute;
+ top:25%;
+ width:50%;
+ height:50%;
+ left:25%;
+ color:white;
+  border-radius:8px;
+ background-color:rgba(0,0,0,.6);	
+ text-align:center;
+}
+#questionboxcompleted
+{
+ position:absolute;
+ top:25%;
+ width:46%;
+ height:50%;
+ left:27%;
+ color:white;
+  border-radius:8px;
+ background-color:rgba(0,0,0,.6);	
+ text-align:center;
+
+}    
+
+
+#answerbox
+{
+ position:absolute;
+ top:85%;
+ width:50%;
+ height:12%;
+ left:33%;
+ background-color:transparent;	
+}
+#answertextbx
+{
+ position:relative;
+ width:50%;
+ font-size:18px;
+ font-weight:bold;
+ height:40px;
+ border-radius:6px;
+}
+
+#subbutton{
+
+position:relative;
+width:100px;
+height:35px;
+margin-left:0px;
+border:none;
+background-color:rgba(0,0,0,.9);
+border-radius:6px;
+}
+#subbutton:hover
+{
+	font-weight:bold;
+	background:url("../photos/submitbuttonimage.jpg") no-repeat;
+}
+#levelbox
+{
+	position:absolute;
+	top:15%;
+	height:7%;
+	left:43%;
+    width:12%;
+    text-align:center;
+    color:white;
+     border-radius:8px;
+   background:url("../photos/levelboximage.jpg") no-repeat;
+	font-weight:bold;
+	font-size:30px;
+
+} 
+#levelboxcompleted
+{
+	position:absolute;
+	top:12%;
+	height:5%;
+	left:0%;
+    width:100%;
+    border-radius:8px;
+    color:white;
+    text-align:center;
+    background:url("../photos/levelboximage.jpg") repeat;
+	font-weight:bold;
+	font-size:20px;
+
+}       
+
+
+
+#questimage
+{
+	position:relative;
+	border-radius: 6px;
+	width:100%;
+	height:auto;
+}
+
+#controllabel
+{
+			
+	position:relative;
+    color:white;	
+	left:0%;
+	font-size:15px;
+}
+
+/* users and attempts board css*/
+
+.cardsletter-container
+{
+	position:relative;
+	perspective: 50;
+	display:block;
+	background:transparent;
+	color:black;
+	width:268px;
+    text-align:center;
+    top:17%;
+    
+
+}
+
+.cardletter
+{
+	position:relative;
+	margin:3px;
+	color:#fff;
+	text-align:center;
+	line-height:20px;
+	width:15px;
+	height:15px;
+	display:inline-block;
+	transition: all .3s ease;
+    transform-style: preserve-3d;
+    animation:digitboxflipanimation 4s infinite;
+     box-shadow: inset 5px 5px 5px rgba(0,0,0,.3) , 0 5px 0 #ccc;
+    
+
+}
+
+.eachcardletterfront,.eachcardletterback
+{
+  position:absolute;
+  
+
+  background:url("../photos/levelboximage.jpg") repeat;
+  width:20px;
+  height:20px;
+  backface-visibility:hidden;
+}
+.eachcardletterback{
+    transform: rotateY(180deg);	
+
+}
+
+
+.hangingbox
+{
+	position:absolute;
+	bottom:0%;
+	right:0%;
+	background:transparent;
+/*	background:url("../photos/scoreboard483298.jpg") no-repeat; */
+	background-size: cover;
+	border-radius:10px;
+	width:284px;
+	height:204px;
+	text-align:center;
+	 transform-style: preserve-3d;
+	 -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Safari */
+    transform: rotate(0deg);
+
+}  
+
+.cards-container
+{
+	position:relative;
+	perspective: 50;
+	background:transparent;
+	color:black;
+	width:268px;
+    text-align:center;
+    top:17%;
+    
+
+}
+
+.card
+{
+	position:relative;
+	margin:3px;
+	color:#000;
+	text-align:center;
+	line-height:20px;
+	width:20px;
+	height:20px;
+	display:inline-block;
+	transition: all .3s ease;
+    transform-style: preserve-3d;
+    animation:digitboxflipanimation 4s infinite;
+     box-shadow: inset 5px 5px 5px rgba(0,0,0,.3) , 0 5px 0 #696969;
+    
+
+}
+
+.eachcardfront,.eachcardback
+{
+  position:absolute;
+  
+background:white;
+ /* background:url("../photos/levelboximage.jpg") repeat;   */ 
+  width:20px;
+  height:20px;
+  backface-visibility:hidden;
+}
+.eachcardback{
+    transform: rotateY(180deg);	
+}
+
+.fontclasscard
+{
+
+font-size:22px;
+font-weight:bold;
+
+}
+
+
+    @keyframes digitboxflipanimation
+{
+	
+	0%
+	{
+        transform: rotateY(180deg);			
+        box-shadow: inset 5px 5px 5px rgba(0,0,0,.3) , 0 5px 0 #696969;
+	}
+
+
+	100%
+	{
+		 transform: rotateY(0deg);			
+        box-shadow: inset 5px 5px 5px rgba(0,0,0,.3) , 0 5px 0 #696969;
+ 
+	}
+	
+}
+    
+div.cards-container > div:nth-child(2)
+{
+	animation-delay:.1s;
+
+} 
+div.cards-container > div:nth-child(3)
+{
+	animation-delay:.2s;
+
+} 
+div.cards-container > div:nth-child(4)
+{
+	animation-delay:.3s;
+
+} 
+div.cards-container > div:nth-child(5)
+{
+	animation-delay:.4s;
+
+} 
+div.cards-container > div:nth-child(6)
+{
+	animation-delay:.5s;
+
+} 
+div.cards-container > div:nth-child(7)
+{
+	animation-delay: .6s;
+
+} 
+div.cards-container > div:nth-child(8)
+{
+	animation-delay:.7s;
+
+} 
+div.cards-container > div:nth-child(9)
+{
+	animation-delay:.8s;
+
+} 
+/* end of users and attempts board */
+
+#logoswat
+{
+	position:absolute;
+	left:3%;
+	top:85%;
+	height:8%;
+	width:auto;
+}
+
+
+
+}
+
+
+
+/* 768<=x<=991 tablets */
+  @media only screen and (min-width: 768px) and (max-width: 991px) 
+{ 
+
+#mainbody{
+  background:url("../photos/huntpage768991.jpg") no-repeat;
+  background-size:cover;
+    }
+
+#questionbox
+{
+ position:absolute;
+ top:25%;
+ width:50%;
+ height:60%;
+ left:25%;
+ color:white;
+  border-radius:8px;
+ background-color:rgba(0,0,0,.6);	
+ text-align:center;
+}
+
+#questionboxcompleted
+{
+ position:absolute;
+ top:25%;
+ width:70%;
+ height:60%;
+ left:15%;
+ color:white;
+  border-radius:8px;
+ background-color:rgba(0,0,0,.6);	
+ text-align:center;
+}    
+
+
+#answerbox
+{
+ position:absolute;
+ top:91%;
+ width:100%;
+ left:37%;
+ background-color:transparent;	
+}
+#answertextbx
+{
+ position:relative;
+ 
+ font-size:16px;
+ font-weight:bold;
+ height:40px;
+ border-radius:6px;
+}
+#subbutton{
+
+
+border-radius:6px;
+}
+#levelbox
+{
+	position:absolute;
+	top:12%;
+	height:7%;
+	left:40%;
+    width:20%;
+    text-align:center;
+     border-radius:8px;
+     color:white;
+    background:url("../photos/levelboximage.jpg") no-repeat;
+	font-weight:bold;
+	font-size:25px;
+
+} 
+#levelboxcompleted
+{
+	position:absolute;
+	top:12%;
+	height:5%;
+	left:0%;
+    width:100%;
+    text-align:center;
+     color:white;
+    background:url("../photos/levelboximage.jpg") repeat;
+      border-radius:8px;
+   	font-weight:bold;
+	font-size:20px;
+
+}       
+
+#subbutton{
+
+height:35px;
+width:100px;
+margin-left:0px;
+font-size:15px;
+border:none;
+background-color:rgba(0,0,0,.9);
+}
+#subbutton:hover
+{
+	font-weight:bold;
+	background:url("../photos/submitbuttonimage.jpg") no-repeat;
+
+}
+
+#questimage
+{
+position:relative;
+border-radius: 6px;
+	width:100%;
+	height:auto;
+}
+
+/* users and attempts board css*/
+
+.cardsletter-container
+{
+	position:relative;
+	perspective: 50;
+	display:block;
+	background:transparent;
+	color:black;
+	width:268px;
+    text-align:center;
+    top:17%;
+    
+
+}
+
+.cardletter
+{
+	position:relative;
+	margin:3px;
+	color:#fff;
+	text-align:center;
+	line-height:20px;
+	width:15px;
+	height:15px;
+	display:inline-block;
+	transition: all .3s ease;
+    transform-style: preserve-3d;
+    animation:digitboxflipanimation 4s infinite;
+     box-shadow: inset 5px 5px 5px rgba(0,0,0,.3) , 0 5px 0 #ccc;
+    
+
+}
+
+.eachcardletterfront,.eachcardletterback
+{
+  position:absolute;
+  
+
+  background:url("../photos/levelboximage.jpg") repeat;
+  width:20px;
+  height:20px;
+  backface-visibility:hidden;
+}
+.eachcardletterback{
+    transform: rotateY(180deg);	
+
+}
+
+
+.hangingbox
+{
+	position:absolute;
+	bottom:0%;
+	right:0%;
+	background:transparent;
+/*	background:url("../photos/scoreboard483298.jpg") no-repeat; */
+	background-size: cover;
+	border-radius:10px;
+	width:250px;
+	height:179.6px;
+	text-align:center;
+	 transform-style: preserve-3d;
+	 -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Safari */
+    transform: rotate(0deg);
+
+}  
+
+.cards-container
+{
+	position:relative;
+	perspective: 50;
+	background:transparent;
+	color:black;
+	width:268px;
+    text-align:center;
+    top:17%;
+    
+
+}
+
+.card
+{
+	position:relative;
+	margin:3px;
+	color:#000;
+	text-align:center;
+	line-height:20px;
+	width:20px;
+	height:20px;
+	display:inline-block;
+	transition: all .3s ease;
+    transform-style: preserve-3d;
+    animation:digitboxflipanimation 4s infinite;
+     box-shadow: inset 5px 5px 5px rgba(0,0,0,.3) , 0 5px 0 #696969;
+    
+
+}
+
+.eachcardfront,.eachcardback
+{
+  position:absolute;
+  
+background:white;
+ /* background:url("../photos/levelboximage.jpg") repeat;   */ 
+  width:20px;
+  height:20px;
+  backface-visibility:hidden;
+}
+.eachcardback{
+    transform: rotateY(180deg);	
+}
+
+.fontclasscard
+{
+
+font-size:18px;
+font-weight:bold;
+
+}
+
+
+    @keyframes digitboxflipanimation
+{
+	
+	0%
+	{
+        transform: rotateY(180deg);			
+        box-shadow: inset 5px 5px 5px rgba(0,0,0,.3) , 0 5px 0 #696969;
+	}
+
+
+	100%
+	{
+		 transform: rotateY(0deg);			
+        box-shadow: inset 5px 5px 5px rgba(0,0,0,.3) , 0 5px 0 #696969;
+ 
+	}
+	
+}
+    
+div.cards-container > div:nth-child(2)
+{
+	animation-delay:.1s;
+
+} 
+div.cards-container > div:nth-child(3)
+{
+	animation-delay:.2s;
+
+} 
+div.cards-container > div:nth-child(4)
+{
+	animation-delay:.3s;
+
+} 
+div.cards-container > div:nth-child(5)
+{
+	animation-delay:.4s;
+
+} 
+div.cards-container > div:nth-child(6)
+{
+	animation-delay:.5s;
+
+} 
+div.cards-container > div:nth-child(7)
+{
+	animation-delay: .6s;
+
+} 
+div.cards-container > div:nth-child(8)
+{
+	animation-delay:.7s;
+
+} 
+div.cards-container > div:nth-child(9)
+{
+	animation-delay:.8s;
+
+} 
+/* end of users and attempts board */
+#logoswat
+{
+	position:absolute;
+	left:3%;
+	top:90%;
+	height:7%;
+	width:auto;
+}
+}
+
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) 
+{ 
+
+#mainbody{
+  background:url("../photos/huntpage9911200.jpg") no-repeat;
+  background-size:cover;
+    }
+
+#questionbox
+{
+ position:absolute;
+ top:25%;
+ width:60%;
+ height:50%;
+ left:20%;
+ color:white;
+  border-radius:8px;
+ background-color:rgba(0,0,0,.6);	
+ text-align:center;
+}  
+
+#questionboxcompleted
+{
+ position:absolute;
+ top:25%;
+ width:60%;
+ height:50%;
+ left:20%;
+ color:white;
+  border-radius:8px;
+ background-color:rgba(0,0,0,.6);	
+ text-align:center;
+}    
+
+
+#answerbox
+{
+ position:absolute;
+ top:85%;
+ width:50%;
+ left:33%;
+ background-color:transparent;	
+}
+#answertextbx
+{
+ position:relative;
+ width:50%;
+ font-weight:bold;
+ font-size:17px;
+ height:40px;
+ border-radius:6px;
+}
+#subbutton{
+
+
+   border-radius:6px;
+}
+#levelbox
+{
+	position:absolute;
+	top:12%;
+	height:7%;
+	left:40%;
+    width:16%;
+    text-align:center;
+    
+     border-radius:8px;
+   color:white;
+    background:url("../photos/levelboximage.jpg") no-repeat;
+	font-weight:bold;
+	font-size:25px;
+
+} 
+#levelboxcompleted
+{
+	position:absolute;
+	top:12%;
+	height:5%;
+	left:0%;
+    width:100%;
+    text-align:center;
+    border-radius:8px;
+   color:white;
+    background:url("../photos/levelboximage.jpg") repeat;
+	font-weight:bold;
+	font-size:20px;
+
+}   
+
+#subbutton{
+
+width:100px;
+height:35px;
+margin-left:0px;
+border:none;
+background-color:rgba(0,0,0,.9);
+}
+#subbutton:hover
+{
+	font-weight:bold;
+	background:url("../photos/submitbuttonimage.jpg") no-repeat;
+
+}
+
+#questimage
+{
+	position:relative;
+	border-radius: 6px;
+	width:100%;
+	height:auto;
+}
+
+/* users and attempts board css*/
+
+.cardsletter-container
+{
+	position:relative;
+	perspective: 50;
+	display:block;
+	background:transparent;
+	color:black;
+	width:268px;
+    text-align:center;
+    top:17%;
+    
+
+}
+
+.cardletter
+{
+	position:relative;
+	margin:3px;
+	color:#fff;
+	text-align:center;
+	line-height:20px;
+	width:15px;
+	height:15px;
+	display:inline-block;
+	transition: all .3s ease;
+    transform-style: preserve-3d;
+    animation:digitboxflipanimation 4s infinite;
+     box-shadow: inset 5px 5px 5px rgba(0,0,0,.3) , 0 5px 0 #ccc;
+    
+
+}
+
+.eachcardletterfront,.eachcardletterback
+{
+  position:absolute;
+  
+
+  background:url("../photos/levelboximage.jpg") repeat;
+  width:20px;
+  height:20px;
+  backface-visibility:hidden;
+}
+.eachcardletterback{
+    transform: rotateY(180deg);	
+
+}
+
+
+.hangingbox
+{
+	position:absolute;
+	bottom:0%;
+	right:0%;
+	background:transparent;
+/*	background:url("../photos/scoreboard483298.jpg") no-repeat; */
+	background-size: cover;
+	border-radius:10px;
+	width:284px;
+	height:204px;
+	text-align:center;
+	 transform-style: preserve-3d;
+	 -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Safari */
+    transform: rotate(0deg);
+
+}  
+
+.cards-container
+{
+	position:relative;
+	perspective: 50;
+	background:transparent;
+	color:black;
+	width:268px;
+    text-align:center;
+    top:17%;
+    
+
+}
+
+.card
+{
+	position:relative;
+	margin:3px;
+	color:#000;
+	text-align:center;
+	line-height:20px;
+	width:20px;
+	height:20px;
+	display:inline-block;
+	transition: all .3s ease;
+    transform-style: preserve-3d;
+    animation:digitboxflipanimation 4s infinite;
+     box-shadow: inset 5px 5px 5px rgba(0,0,0,.3) , 0 5px 0 #696969;
+    
+
+}
+
+.eachcardfront,.eachcardback
+{
+  position:absolute;
+  
+background:white;
+ /* background:url("../photos/levelboximage.jpg") repeat;   */ 
+  width:20px;
+  height:20px;
+  backface-visibility:hidden;
+}
+.eachcardback{
+    transform: rotateY(180deg);	
+}
+
+.fontclasscard
+{
+
+font-size:20px;
+font-weight:bold;
+
+}
+
+
+    @keyframes digitboxflipanimation
+{
+	
+	0%
+	{
+        transform: rotateY(180deg);			
+        box-shadow: inset 5px 5px 5px rgba(0,0,0,.3) , 0 5px 0 #696969;
+	}
+
+
+	100%
+	{
+		 transform: rotateY(0deg);			
+        box-shadow: inset 5px 5px 5px rgba(0,0,0,.3) , 0 5px 0 #696969;
+ 
+	}
+	
+}
+    
+div.cards-container > div:nth-child(2)
+{
+	animation-delay:.1s;
+
+} 
+div.cards-container > div:nth-child(3)
+{
+	animation-delay:.2s;
+
+} 
+div.cards-container > div:nth-child(4)
+{
+	animation-delay:.3s;
+
+} 
+div.cards-container > div:nth-child(5)
+{
+	animation-delay:.4s;
+
+} 
+div.cards-container > div:nth-child(6)
+{
+	animation-delay:.5s;
+
+} 
+div.cards-container > div:nth-child(7)
+{
+	animation-delay: .6s;
+
+} 
+div.cards-container > div:nth-child(8)
+{
+	animation-delay:.7s;
+
+} 
+div.cards-container > div:nth-child(9)
+{
+	animation-delay:.8s;
+
+} 
+/* end of users and attempts board */
+#logoswat
+{
+	position:absolute;
+	left:3%;
+	top:85%;
+	height:6%;
+	width:auto;
+}
+
+
+}
+
+
+
+
+

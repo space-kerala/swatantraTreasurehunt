@@ -68,12 +68,17 @@ change the views, styles and features according to your need.
 * php artisan storage:link
 * edit the .env file as per your details.
 * php artisan config:cache
+* php artisan migrate
 * php artisan serve
 * open browser and go to localhost:8000/
 * website is hosted locally.
 * change the views,features as per your need 
 
-
+#Default Admin Details
+* navigate to localhost:8000/admin/login 
+* email : admin@treasurehunt.com
+* password : 'password'
+* change the admin password or delete the existing admin after creating a new admin using the existing default admin before your website go live. 
 ## Details
 
 It mainly uses:

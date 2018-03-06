@@ -74,7 +74,7 @@ change the views, styles and features according to your need.
 * website is hosted locally.
 * change the views,features as per your need 
 
-#Default Admin Details
+## Default Admin Details
 * navigate to localhost:8000/admin/login 
 * email : admin@treasurehunt.com
 * password : 'password'
